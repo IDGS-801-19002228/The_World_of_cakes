@@ -37,42 +37,24 @@
               
                 <div class="container">
                  <div class="">
-                     <form name="sent" action="/insertproveedor" id="form1" method="POST">
+                     <form name="sent" action="/insertmerma" id="form1" method="POST">
                          <div class="row control-group">
                              <div class="form-group col-xs-12 float-label-form-group controls">
-                                 {{render_field(form.rfc,class='form-control')}}
+                                 {{render_field(form.nombreProducto,class='form-control')}}
                              </div>
                          </div>
                          <div class="row control-group">
                              <div class="form-group col-xs-12 float-label-form-group controls">
-                                 {{render_field(form.domicilio,class='form-control')}}
+                                 {{render_field(form.cantidad,class='form-control')}}
                              </div>
                          </div>
                          <div class="row control-group">
                              <div class="form-group col-xs-12 float-label-form-group controls">
-                                 {{render_field(form.razon_Social,class='form-control')}}
+                                 {{render_field(form.precioVenta,class='form-control')}}
                              </div>
                          </div>
-                         <div class="row control-group">
-                             <div class="form-group col-xs-12 float-label-form-group controls">
-                                 {{render_field(form.nombre,class='form-control')}}
-                             </div>
-                         </div>
-                         <div class="row control-group">
-                            <div class="form-group col-xs-12 float-label-form-group controls">
-                                {{render_field(form.telefono,class='form-control')}}
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 float-label-form-group controls">
-                                {{render_field(form.descipcion,class='form-control')}}
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 float-label-form-group controls">
-                                {{render_field(form.estatus,class='form-control')}}
-                            </div>
-                        </div>
+                         
+                        
                         <input type="submit" id="reg-proveedor" name="registra" value="Registrar"/>
                      </form>
                  </div>

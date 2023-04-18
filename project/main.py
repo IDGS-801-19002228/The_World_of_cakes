@@ -10,13 +10,12 @@ from . import db
 
 from .models import Role
 
-
 main = Blueprint('main',__name__)
 
 
 @main.route('/')
 def principal():
-    return render_template('principal.html')
+    return render_template('proveedor.html')
 
 @main.route('/profile')
 @login_required

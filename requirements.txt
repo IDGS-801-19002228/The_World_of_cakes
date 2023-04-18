@@ -4,5 +4,6 @@ flask-security
 email-validator
 mysqlclient
 flask-marshmallow
+flask_WTF
 bcrypt
 flask-blueprint
