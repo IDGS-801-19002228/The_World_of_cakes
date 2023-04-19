@@ -16,7 +16,11 @@ main = Blueprint('main',__name__)
 
 @main.route('/')
 def principal():
-    return render_template('principal.html')
+    return render_template('index.html')
+
+@main.route('/inicio')
+def inicio():
+    return render_template('inicio.html')
 
 @main.route('/profile')
 @login_required

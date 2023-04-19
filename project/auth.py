@@ -78,12 +78,26 @@ def register_post():
 
 
 @auth.route("/productos", methods=["GET"])
-@login_required
-@roles_required("user")
 def productos():
     productos=Product.query.all() 
     return render_template("productos.html",productos=productos)
 
+@auth.route("/pedidos", methods=["GET"])
+def pedidos():
+    productos=Product.query.all() 
+    return render_template("productos.html",productos=productos)
+
+@auth.route("/finanzas", methods=["GET"])
+@login_required
+@roles_required("admin")
+def finanzas():
+    return render_template("finanzas.html")
+
+@auth.route("/empleados", methods=["GET"])
+@login_required
+@roles_required("admin")
+def empleados():
+    return render_template("empleados.html")
 
 @auth.route("/administracion", methods=["GET","POST"])
 @login_required
