@@ -30,16 +30,18 @@ class Role(RoleMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     description =  db.Column(db.String(255))
-
-class Product(db.Model, UserMixin):
-    """Product account model"""
     
+class Product(db.Model, UserMixin):
+    """Producto account model"""
     __tablename__ = 'product'
-    id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(100))
-    precio = db.Column(db.Integer)
-    descripcion = db.Column(db.String(255))
-    image_url = db.Column(db.String(200))
+    id_empleado = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(100), nullable=False)
+    precio_Venta = db.Column(db.Integer, nullable=False)
+    tamanio = db.Column(db.Integer, nullable=False)
+    peso = db.Column(db.Integer, nullable=False)
+    descripcion = db.Column(db.String(255), nullable=False)
+    numero_Existencias = db.Column(db.Integer, nullable=False)
+    image_url = db.Column(db.String(200), nullable=False)
     
 class Empleado(db.Model, UserMixin):
     """Employe account model"""

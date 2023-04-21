@@ -1,8 +1,6 @@
 {% extends "index.html" %}
 
 {% block content %}
-
-
     
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
@@ -18,9 +16,15 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder">{{productos.nombre}}</h5>
                             <!-- Product price-->
-                            <h6 class="card-subtitle mb-2 text-muted">Precio: ${{productos.precio}}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Precio: ${{productos.precio_Venta}}</h6>
                             <!-- Description Product -->
-                            <p class="card-text"><b>Descripcion:</b> {{productos.descripcion}}</p>
+                            <p class="card-text">Tamaño: {{productos.tamanio}}</p>
+                            <!-- Product name-->
+                            <p class="card-text">Peso: {{productos.peso}}</p>
+                            <!-- Product price-->
+                            <p class="card-text">Descripcion: ${{productos.descripcion}}</p>
+                            <!-- Description Product -->
+                            <p class="card-text">Existencias: {{productos.numero_Existencias}}</p>
                             <button style="background-color: green;" >Agregar al carrito
                         </div>
                     </div>

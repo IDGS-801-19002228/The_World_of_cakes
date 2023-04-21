@@ -14,13 +14,13 @@ from flask_security.utils import (
 )
 
 
-from .models import Merma, Role, User
+from .models import Merma, Product, Role, User
 
 from . import db, userDataStore
 
 from flask_security.decorators import roles_required
 
-from .models import User, Product, Empleado, Proveedor
+from .models import User, Empleado, Proveedor
 
 from .forms import ProductForm, EmpleadoForm, ProveedorForm
 from project import forms
@@ -133,8 +133,11 @@ def administracion_admin():
     create_form = forms.ProductForm(request.form)
     if request.method == 'POST':
         prod= Product(nombre=create_form.Nombre.data,
-                        precio=create_form.Precio.data,
+                        precio_Venta=create_form.Precio_Venta.data,
+                        tamanio=create_form.Tamanio.data,
+                        peso=create_form.Peso.data,
                         descripcion=create_form.Descripcion.data,
+                        numero_Existencias=create_form.Numero_Existencias.data,
                         image_url=create_form.Image_url.data)
         
         db.session.add(prod)

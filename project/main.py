@@ -6,6 +6,7 @@ from flask_security import login_required, current_user, roles_accepted
 
 from flask_security.decorators import roles_required
 
+
 from . import db
 
 from .models import Role
