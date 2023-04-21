@@ -15,6 +15,7 @@ db = SQLAlchemy()
 from .models import Product, User, Role
 #Creamos un objeto de la clase SQLAlchemySessionUserDatastore
 userDataStore = SQLAlchemyUserDatastore(db, User, Role)
+#userDataStore2 = SQLAlchemyUserDatastore(db, Admin, Role_admin)
 #productDataStore = SQLAlchemy(db, Product)
 
 #Método de inicio de la aplicación
@@ -44,6 +45,7 @@ def create_app():
 
     #Conectando los modelos a fask-security usando SQLAlchemyUserDatastore
     security = Security(app, userDataStore)
+    #security = Security(app, userDataStore2)
 
     #login_manager = LoginManager()
     #login_manager.login_view = 'auth.login'

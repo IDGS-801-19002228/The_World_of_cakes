@@ -33,7 +33,7 @@ class ProductForm(Form):
     
 class EmpleadoForm(Form):
     id_empleado = IntegerField('id_empleado')
-    Nombre = StringField('Nombre:')
+    name = StringField('Nombre:')
     ApellidoP = StringField('ApellidoP:')
     ApellidoM = StringField('ApellidoM:')
     Numero_empleado = StringField('Numero_empleado:')
@@ -42,8 +42,8 @@ class EmpleadoForm(Form):
     NumeroCasa = IntegerField('NumeroCasa:')
     Colonia = StringField('Colonia:')
     Codigo_postal = IntegerField('Codigo_postal:')
-    Correo_electronico = StringField('Correo_electronico:')
-    Contraseña = StringField('Contraseña:')
+    email = StringField('Correo_electronico:')
+    password = PasswordField('Contraseña:')
     TelefonoC = StringField('TelefonoC:')
 
 class ProveedorForm(Form):

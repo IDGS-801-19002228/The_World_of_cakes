@@ -1,4 +1,5 @@
 from itertools import product
+import random
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -58,19 +59,18 @@ def register():
 
 @auth.route("/register", methods=["POST"])
 def register_post():
-    Nombre = request.form.get("Nombre"),
+    name = request.form.get("name"),
     ApellidoP = request.form.get("ApellidoP")
     ApellidoM = request.form.get("ApellidoM"),
-    Numero_cliente = request.form.get("Numero_cliente"),
+    Numero_cliente = random.randint(1, 10),
     Fecha_nacimiento = request.form.get("Fecha_nacimiento"),
     Calle = request.form.get("Calle"),
     NumeroCasa = request.form.get("NumeroCasa"),
     Colonia = request.form.get("Colonia"),
     Codigo_postal = request.form.get("Codigo_postal"),
-    email = request.form.get("email"),
-    password = request.form.get("password"),
     TelefonoC = request.form.get("TelefonoC")
-    status = 1
+    email = request.form.get("email"),
+    password = request.form.get("password")
 
     user = User.query.filter_by(email=email).first()
 
@@ -79,7 +79,16 @@ def register_post():
         return redirect(url_for("auth.register"))
 
     userDataStore.create_user(
-        name=Nombre,
+        name=name,
+        ApellidoP = ApellidoP,
+        ApellidoM = ApellidoM,
+        Numero_cliente = Numero_cliente,
+        Fecha_nacimiento = Fecha_nacimiento,
+        Calle = Calle,
+        NumeroCasa = NumeroCasa,
+        Colonia = Colonia,
+        Codigo_postal = Codigo_postal,
+        TelefonoC = TelefonoC,
         email=email,
         password=generate_password_hash(password, method="sha256"),
     )
@@ -87,6 +96,32 @@ def register_post():
     db.session.commit()
 
     return redirect(url_for("auth.login"))
+
+'''@auth.route("/register_admin")
+def register_admin():
+    return render_template("/security/register_admin.html")
+
+@auth.route("/register_admin", methods=["POST"])
+def register_post_admin():
+    email = request.form.get("email")
+    name = request.form.get("name")
+    password = request.form.get("password")
+
+    admin = Admin.query.filter_by(email=email).first()
+
+    if admin:
+        flash("El correo electrónico ya existe")
+        return redirect(url_for("auth.register_admin"))
+
+    userDataStore2.create_user(
+        name=name,
+        email=email,
+        password=generate_password_hash(password, method="sha256"),
+    )
+
+    db.session.commit()
+
+    return redirect(url_for("auth.login"))'''
 
 #----------------------------------------------------------------------------
 
@@ -114,18 +149,33 @@ def finanzas():
 def empleados():
     create_form = forms.EmpleadoForm(request.form)
     if request.method == 'POST':
-        emple= Empleado(Nombre=create_form.Nombre.data,
+        emple= Empleado(name=create_form.name.data,
                         ApellidoP=create_form.ApellidoP.data,
                         ApellidoM=create_form.ApellidoM.data,
-                        Numero_empleado=create_form.Numero_empleado.data,
+                        Numero_empleado=random.randint(1, 10),
                         Fecha_nacimiento=create_form.Fecha_nacimiento.data,
                         Calle=create_form.Calle.data,
                         NumeroCasa=create_form.NumeroCasa.data,
                         Colonia=create_form.Colonia.data,
                         Codigo_postal=create_form.Codigo_postal.data,
-                        Correo_electronico=create_form.Correo_electronico.data,
+                        email=create_form.email.data,
+                        password=create_form.password.data,
                         TelefonoC=create_form.TelefonoC.data,
-                        status = 1)
+                        estatus = 1)
+        
+        userDataStore.create_user(
+            name=create_form.name.data,
+            email=create_form.email.data,
+            ApellidoP=create_form.ApellidoP.data,
+            ApellidoM=create_form.ApellidoM.data,
+            Fecha_nacimiento=create_form.Fecha_nacimiento.data,
+            Calle=create_form.Calle.data,
+            NumeroCasa=create_form.NumeroCasa.data,
+            Colonia=create_form.Colonia.data,
+            Codigo_postal=create_form.Codigo_postal.data,
+            TelefonoC=create_form.TelefonoC.data,
+            password=generate_password_hash(create_form.password.data, method="sha256"),
+    )
 
         db.session.add(emple)
         db.session.commit()
