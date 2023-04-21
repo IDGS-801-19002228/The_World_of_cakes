@@ -1,0 +1,81 @@
+2023-04-21 17:19:05,347:WARNING: * Debugger is active!
+2023-04-21 17:19:05,354:INFO: * Debugger PIN: 341-549-671
+2023-04-21 17:19:20,737:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\main.py', reloading
+2023-04-21 17:19:23,366:WARNING: * Debugger is active!
+2023-04-21 17:19:23,374:INFO: * Debugger PIN: 497-842-438
+2023-04-21 17:19:36,204:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\main.py', reloading
+2023-04-21 17:19:38,455:INFO:Se inicio la aplicacion
+2023-04-21 17:19:38,472:WARNING: * Debugger is active!
+2023-04-21 17:19:38,480:INFO: * Debugger PIN: 341-549-671
+2023-04-21 17:19:46,635:INFO:Se inicio la aplicacion
+2023-04-21 17:19:46,656:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 17:19:46,656:INFO:[33mPress CTRL+C to quit[0m
+2023-04-21 17:19:46,660:INFO: * Restarting with stat
+2023-04-21 17:19:48,550:INFO:Se inicio la aplicacion
+2023-04-21 17:19:48,566:WARNING: * Debugger is active!
+2023-04-21 17:19:48,570:INFO: * Debugger PIN: 341-549-671
+2023-04-21 17:20:29,921:INFO:Se inicio la aplicacion
+2023-04-21 17:20:29,937:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 17:20:29,937:INFO:[33mPress CTRL+C to quit[0m
+2023-04-21 17:20:29,940:INFO: * Restarting with stat
+2023-04-21 17:20:31,901:INFO:Se inicio la aplicacion
+2023-04-21 17:20:31,915:WARNING: * Debugger is active!
+2023-04-21 17:20:31,921:INFO: * Debugger PIN: 341-549-671
+2023-04-21 17:21:03,286:INFO:127.0.0.1 - - [21/Apr/2023 17:21:03] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+2023-04-21 17:21:03,342:INFO:127.0.0.1 - - [21/Apr/2023 17:21:03] "GET /login?next=%2Fsecurity%2Flogout HTTP/1.1" 200 -
+2023-04-21 17:21:08,471:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "GET / HTTP/1.1" 200 -
+2023-04-21 17:21:08,585:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,589:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,604:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/bootstrap/css/styles.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,609:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,612:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,620:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,722:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/img/fondo4.png HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,729:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/img/fondo3.png HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,915:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/img/fondo2.png HTTP/1.1[0m" 304 -
+2023-04-21 17:21:08,927:INFO:127.0.0.1 - - [21/Apr/2023 17:21:08] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,750:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "GET /security/login HTTP/1.1" 200 -
+2023-04-21 17:21:16,854:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,873:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,894:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/bootstrap/css/styles.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,903:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,914:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,926:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-21 17:21:16,931:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-21 17:21:16,967:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-21 17:21:16,978:INFO:127.0.0.1 - - [21/Apr/2023 17:21:16] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,703:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-21 17:21:21,706:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-21 17:21:21,731:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "GET / HTTP/1.1" 200 -
+2023-04-21 17:21:21,829:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,840:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,854:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/bootstrap/css/styles.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,887:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,899:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,914:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-21 17:21:21,986:INFO:127.0.0.1 - - [21/Apr/2023 17:21:21] "[36mGET /static/img/fondo3.png HTTP/1.1[0m" 304 -
+2023-04-21 17:21:22,000:INFO:127.0.0.1 - - [21/Apr/2023 17:21:22] "[36mGET /static/img/fondo4.png HTTP/1.1[0m" 304 -
+2023-04-21 17:21:22,032:INFO:127.0.0.1 - - [21/Apr/2023 17:21:22] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-21 17:21:22,036:INFO:127.0.0.1 - - [21/Apr/2023 17:21:22] "[36mGET /static/img/fondo2.png HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,599:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+2023-04-21 17:22:04,616:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "GET / HTTP/1.1" 200 -
+2023-04-21 17:22:04,688:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,698:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,712:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,721:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,727:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/bootstrap/css/styles.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,734:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,837:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/img/fondo3.png HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,871:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,886:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/img/fondo4.png HTTP/1.1[0m" 304 -
+2023-04-21 17:22:04,895:INFO:127.0.0.1 - - [21/Apr/2023 17:22:04] "[36mGET /static/img/fondo2.png HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,593:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "GET /security/register HTTP/1.1" 200 -
+2023-04-21 17:22:44,677:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,683:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,697:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/bootstrap/css/styles.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,704:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,720:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,738:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-21 17:22:44,838:INFO:127.0.0.1 - - [21/Apr/2023 17:22:44] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -

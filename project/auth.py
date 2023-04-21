@@ -1,6 +1,6 @@
 from itertools import product
 import random
-from flask import Blueprint, render_template, redirect, url_for, request, flash
+from flask import Blueprint, Flask, render_template, redirect, url_for, request, flash
 
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -25,7 +25,7 @@ from .models import User, Empleado, Proveedor
 
 from .forms import ClienteForm, ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm
 from project import forms
-
+import logging
 
 auth = Blueprint("auth", __name__, url_prefix="/security")
 
@@ -37,6 +37,9 @@ def login():
 
 @auth.route("/login", methods=["POST"])
 def login_post():
+    
+    app = Flask(__name__)
+    
     email = request.form.get("email")
     password = request.form.get("password")
     remember = True if request.form.get("remember") else False
@@ -46,9 +49,15 @@ def login_post():
     if not user or not check_password_hash(user.password, password):
 
         flash("El usuario y/o la contraseña son incorrectos")
+        
+        app.logger.warning('Acceso fallido'.format(email))
+        
         return redirect(url_for("auth.login"))
 
     login_user(user, remember=remember)
+    
+    app.logger.debug('El usuario {} ingreso al sistema'.format(email))
+    
     return redirect(url_for("main.principal"))
 
 
@@ -59,6 +68,9 @@ def register():
 
 @auth.route("/register", methods=["POST"])
 def register_post():
+    
+    app = Flask(__name__)
+    
     name = request.form.get("name"),
     ApellidoP = request.form.get("ApellidoP")
     ApellidoM = request.form.get("ApellidoM"),
@@ -76,6 +88,10 @@ def register_post():
     #usuarios=User.query.all()
     if user:
         flash("El correo electrónico ya existe")
+        
+        app = Flask(__name__)
+        app.logger.error('Se encontro un usuario existente')
+        
         return redirect(url_for("auth.register"))
 
     userDataStore.create_user(
@@ -95,6 +111,8 @@ def register_post():
 
     db.session.commit()
 
+    app.logger.debug('Se registro un usuario con el correo: {}'.format(email))
+    
     return redirect(url_for("auth.login"))
 
 '''@auth.route("/register_admin")

@@ -1,6 +1,6 @@
 
 from multiprocessing.dummy import current_process
-from flask import Blueprint, render_template
+from flask import Blueprint, Flask, render_template
 
 from flask_security import login_required, current_user, roles_accepted
 
@@ -11,8 +11,15 @@ from . import db
 
 from .models import Role
 
+import logging
+
 main = Blueprint('main',__name__)
 
+logging.basicConfig(filename='test.log', level=logging.DEBUG,
+                    format='%(asctime)s:%(levelname)s:%(message)s')
+
+app = Flask(__name__)
+app.logger.info('Se inicio la aplicacion')
 
 @main.route('/')
 def principal():
