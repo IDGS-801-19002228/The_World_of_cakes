@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="../static/bootstrap/css/styles.css">
 </head>
-
 <body>
     <section class="hero is-white is-fullheight">
         <section>
@@ -28,63 +27,37 @@
                     <a class="navbar-brand" style="color:white"><h4>GamePlanet</h4></a>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
-
-                            <a href="{{ url_for('main.principal') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                 <h5>Inicio</h5>
-                            </a>
-
-                            {% if current_user.is_authenticated %}
-                            
-                            <a href="{{ url_for('auth.productos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                <h5>Catalogo de Productos</h5>
-                            </a>
-
-                            
-                            <a href="{{ url_for('auth.administracion') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                <h5>Administracion</h5>
-                           </a>
-
-                            <a href="{{ url_for('main.profile') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                 <h5>Perfil de Usuario</h5>
-                            </a>
-
-                            {% endif %}
-                            
-
                             {% if not current_user.is_authenticated %}
                             <a href="{{ url_for('auth.login') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
                                  <h5>Login</h5>
                             </a>
-                            <a href="{{ url_for('auth.register') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
+                            <a href="{{ url_for('auth.signup') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
                                  <h5>Registro</h5>
                             </a>
                             {% endif %}
-
-                            <a href="{{ url_for('main.contacto') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                <h5>Contacto</h5>
-                           </a>
-                           
                             {% if current_user.is_authenticated %}
+                            <a href="{{ url_for('auth.verProductos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
+                                <h5>Producto</h5>
+                            </a>
+                            <a href="{{ url_for('auth.recetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
+                                <h5>Recetario</h5>
+                            </a>
                             <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">
-                                 <h5>Cerrar Sesión</h5>
+                                <h5>Logout</h5>
                             </a>
                             {% endif %}
                         </div>	
                     </div>
-                    
                 </div>
             </nav>
         </div>
-
         <div class="hero-body">
             <div class="container has-text-centered">
-               {% block content %}
+               {% block content %} 
+
                {% endblock %}
             </div>
         </div>
     </section>
-    
-
-   
 </body>
 </html>

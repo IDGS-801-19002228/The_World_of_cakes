@@ -1,0 +1,57 @@
+{% extends "base.html" %} 
+ 
+ {% block content%}
+      <h1 class="text-center mt-5 mb-5 text-primary">Gestionar Recetario</h1>
+
+        <div class="container">
+          <div class="card shadow">
+            <div class="card-body">
+              
+              <form action="/registroRecetario" method="POST">
+                <div class="row mb-3">
+                  <div class="col">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control mb-3" name="nombre">
+                  </div>
+                  <div class="col">
+                    <label>Descripción</label>
+                    <input type="text" class="form-control mb-3" name="descripcion">
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary mb-3 mt-4" type="submit">Guardar</btn-primary></button>
+                      <br>
+                      <label for="Image_url" class="col-form-label">Foto</label>
+                      <input class="form-control" type="file" id="Image_url" multiple>
+                      <h7 style="color: black;">Se recomienda una de almenos 2000 px.</h7>
+                  </div>
+                </div>
+            </form>
+
+              <!-- Tabla -->
+              <table class="table table-bordered">
+                <thead>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Editar</th>
+                  <th scope="col">Eliminar</th>
+                </thead>
+              
+                <tbody>
+                  {% for rece in recetario %}
+                  <tr>
+                  <td>{{rece.id}}</td>
+                  <td>{{rece.nombre}}</td>
+                  <td>{{rece.descripcion}}</td>
+                  <td><a href="/modificarRecetario?id={{rece.id}}" class="btn btn-primary btn-sm">Modificar</a></button></td>
+                  <td><a href="/eliminarRecetario?id={{rece.id}}" class="btn btn-danger btn-sm">Eliminar</a></td>
+                  </tr>
+                  {%endfor%}
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+      {% endblock %}

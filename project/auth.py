@@ -1,9 +1,8 @@
-from itertools import product
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 
 from werkzeug.security import generate_password_hash, check_password_hash
 
-
+from .models import Usuario, Producto, Recetario
 from flask_security import login_required, roles_accepted
 
 from flask_security.utils import (
@@ -76,92 +75,155 @@ def register_post():
 
     return redirect(url_for("auth.login"))
 
-
-@auth.route("/productos", methods=["GET"])
-@login_required
-@roles_required("user")
-def productos():
-    productos=Product.query.all() 
-    return render_template("productos.html",productos=productos)
-
-
-@auth.route("/administracion", methods=["GET","POST"])
-@login_required
-@roles_required("admin")
-def administracion():
-    create_form = forms.ProductForm(request.form)
+# Todo LO DE PRODUCTOS ES PARTE HECHA POR PAULINA --------------------------
+@auth.route("/registro", methods=['GET','POST'])
+def registro():
     if request.method == 'POST':
-        prod= Product(nombre=create_form.Nombre.data,
-                        precio=create_form.Precio.data,
-                        descripcion=create_form.Descripcion.data,
-                        image_url=create_form.Image_url.data)
-        
-        db.session.add(prod)
+        pos = Producto(nombre = request.form['nombre'], 
+                       precio_Venta = request.form['precio_Venta'], 
+                       tamanio = request.form['tamanio'],
+                       peso = request.form['peso'],          
+                       descripcion = request.form['descripcion'],
+                       numero_Existencias = request.form['numero_Existencias'],
+                       image_url = 1)
+        #Realizar el insert en la bd
+        db.session.add(pos)
         db.session.commit()
-        
-        flash('El producto se registro correctamente')
-        return redirect(url_for('auth.administracion'))
-    productos=Product.query.all() 
+        return redirect(url_for('auth.verProductos'))
+
+
+@auth.route("/modificarProducto",methods=["GET","POST"])
+def modificarProducto():
+    create_form= forms.ProductoForm(request.form)
+    if request.method=='GET':
+        id = request.args.get('id')
+        #select  * from alumns where id == id 
+        produ = db.session.query(Producto).filter(Producto.id==id).first()
+        create_form.id.data = id
+        create_form.Nombre.data = produ.nombre
+        create_form.Precio_Venta.data = produ.precio_Venta
+        create_form.Tamanio.data = produ.tamanio
+        create_form.Peso.data = produ.peso
+        create_form.Descripcion.data = produ.descripcion
+        create_form.Numero_Existencias.data = produ.numero_Existencias
+    if request.method=='POST':
+        id = create_form.id.data
+        produ = db.session.query(Producto).filter(Producto.id==id).first()
+        produ.nombre = create_form.Nombre.data 
+        produ.precio_Venta = create_form.Precio_Venta.data 
+        produ.tamanio = create_form.Tamanio.data
+        produ.peso = create_form.Peso.data
+        produ.descripcion= create_form.Descripcion.data
+        produ.numero_Existencias = create_form.Numero_Existencias.data
+
+        db.session.add(produ)
+        db.session.commit()
+        return redirect(url_for('auth.verProductos'))
+    return render_template('modificarProducto.html', forms=create_form)
+
+
+
+@auth.route("/eliminarProducto",methods=["GET","POST"])
+def eliminarProducto():
+    create_form= forms.ProductoForm(request.form)
+    if request.method=='GET':
+        id = request.args.get('id')
+        #select  * from alumns where id == id 
+        produ = db.session.query(Producto).filter(Producto.id==id).first()
+        create_form.id.data = id
+        create_form.Nombre.data = produ.nombre
+        create_form.Precio_Venta.data = produ.precio_Venta
+        create_form.Tamanio.data = produ.tamanio
+        create_form.Peso.data = produ.peso
+        create_form.Descripcion.data = produ.descripcion
+        create_form.Numero_Existencias.data = produ.numero_Existencias
+    if request.method=='POST':
+        id = create_form.id.data
+        produ = db.session.query(Producto).filter(Producto.id==id).first()
+        produ.nombre = create_form.Nombre.data 
+        produ.precio_Venta = create_form.Precio_Venta.data 
+        produ.tamanio = create_form.Tamanio.data
+        produ.peso = create_form.Peso.data
+        produ.descripcion= create_form.Descripcion.data
+        produ.numero_Existencias = create_form.Numero_Existencias.data
+
+        db.session.delete(produ)
+        db.session.commit()
+        return redirect(url_for('auth.verProductos'))
+    return render_template('eliminarProducto.html', forms=create_form)
+
+
+
+@auth.route('/verProductos')
+def verProductos():
+    create_form = forms.ProductoForm(request.form)
+    #select * from alumnos
+    producto = Producto.query.all()
+    return render_template('producto.html', form = create_form, producto = producto)
     
-    return render_template("administracion.html", form=create_form,productos=productos)
-
-@auth.route("/modificar",methods=["GET","POST"])
-@login_required
-@roles_required("admin")
-def modificar():
-    create_form2=forms.ProductForm(request.form)
-    if request.method=='GET':
-        id=request.args.get('id')
-        #Select * from alumnos where id==id
-        prod1=db.session.query(Product).filter(Product.id==id).first()
-        create_form2.id.data=id
-        create_form2.Nombre.data=prod1.nombre
-        create_form2.Precio.data=prod1.precio
-        create_form2.Descripcion.data=prod1.descripcion
-        create_form2.Image_url.data=prod1.image_url
-        
-    if request.method=='POST':
-        #Select * from alumnos where id==id
-        id = create_form2.id.data
-        prod2=db.session.query(Product).filter(Product.id==id).first()
-        
-        prod2.nombre=create_form2.Nombre.data
-        prod2.precio=create_form2.Precio.data
-        prod2.descripcion=create_form2.Descripcion.data
-        prod2.image_url=create_form2.Image_url.data
-        db.session.add(prod2)
+# Todo LO DE RECETARIO ES PARTE HECHA POR PAULINA --------------------------
+@auth.route("/registroRecetario", methods=['GET','POST'])
+def registroRecetario():
+    if request.method == 'POST':
+        rece = Recetario(nombre = request.form['nombre'],      
+                       descripcion = request.form['descripcion'])
+        #Realizar el insert en la bd
+        db.session.add(rece)
         db.session.commit()
-        flash('El producto se actualizo correctamente')
-        return redirect(url_for('auth.administracion'))
-    return render_template('modificar.html',form=create_form2)
+        return redirect(url_for('auth.verRecetario'))
 
-@auth.route("/eliminar",methods=['GET','POST'])
-@login_required
-@roles_required("admin")
-def eliminar():
-    create_form3=forms.ProductForm(request.form)
+@auth.route('/verRecetario')
+def verRecetario():
+    create_form = forms.RecetarioForm(request.form)
+    #select * from recetario
+    recetario = Recetario.query.all()
+    return render_template('recetario.html', form = create_form, recetario = recetario)
+
+@auth.route("/modificarRecetario",methods=["GET","POST"])
+def modificarRecetario():
+    create_form= forms.RecetarioForm(request.form)
     if request.method=='GET':
-        id=request.args.get('id')
-        #Select * from productos where id==id
-        prod1=db.session.query(Product).filter(Product.id==id).first()
-        create_form3.id.data=id
-        create_form3.Nombre.data=prod1.nombre
-        create_form3.Precio.data=prod1.precio
-        create_form3.Descripcion.data=prod1.descripcion
-        create_form3.Image_url.data=prod1.image_url
-        
+        id = request.args.get('id')
+        #select  * from recetario where id == id 
+        rece = db.session.query(Recetario).filter(Recetario.id==id).first()
+        create_form.id.data = id
+        create_form.Nombre.data = rece.nombre
+        create_form.Descripcion.data = rece.descripcion
     if request.method=='POST':
-        id = create_form3.id.data
-        prod2=db.session.query(Product).filter(Product.id==id).first()
-        prod2.nombre=create_form3.Nombre.data
-        prod2.precio=create_form3.Precio.data
-        prod2.descripcion=create_form3.Descripcion.data
-        prod2.image_url=create_form3.Image_url.data
-        db.session.delete(prod2)
+        id = create_form.id.data
+        rece = db.session.query(Recetario).filter(Recetario.id==id).first()
+        rece.nombre = create_form.Nombre.data 
+        rece.descripcion= create_form.Descripcion.data
+
+
+        db.session.delete(rece)
         db.session.commit()
-        flash('El producto se elimino correctamente')
-        return redirect(url_for('auth.administracion'))
-    return render_template('eliminar.html',form=create_form3)
+        return redirect(url_for('auth.verRecetario'))
+    return render_template('modificarRecetario.html', forms=create_form)
+
+
+
+@auth.route("/eliminarRecetario",methods=["GET","POST"])
+def eliminarRecetario():
+    create_form= forms.RecetarioForm(request.form)
+    if request.method=='GET':
+        id = request.args.get('id')
+        #select  * from recetario where id == id 
+        rece = db.session.query(Recetario).filter(Recetario.id==id).first()
+        create_form.id.data = id
+        create_form.Nombre.data = rece.nombre
+        create_form.Descripcion.data = rece.descripcion
+    if request.method=='POST':
+        id = create_form.id.data
+        rece = db.session.query(Recetario).filter(Recetario.id==id).first()
+        rece.nombre = create_form.Nombre.data 
+        rece.descripcion= create_form.Descripcion.data
+
+
+        db.session.delete(rece)
+        db.session.commit()
+        return redirect(url_for('auth.verRecetario'))
+    return render_template('eliminarRecetario.html', forms=create_form)
 
 
 

@@ -13,10 +13,17 @@ def my_validate(form, field):
     if len(str(field.data)) == 0:
         raise validators.ValidationError("El campo no tiene datos")
 
-class ProductForm(Form):
+class ProductoForm(Form):
     id = IntegerField('id')
-    Nombre = StringField('Nombre:')                       
-    Precio = IntegerField('Precio:')
-    Descripcion = StringField('Descripcion:')
+    Nombre = StringField('Nombre')                       
+    Precio_Venta = IntegerField('Precio_Venta')
+    Tamanio = IntegerField('Tamanio')
+    Peso = IntegerField('Peso')
+    Descripcion = StringField('Descripcion')
+    Numero_Existencias = IntegerField('Numero_Existencias')
     Image_url = StringField('Image_url')
-    #submit = SubmitField('Enviar')
+
+class RecetarioForm(Form):
+    id = IntegerField('id')
+    Nombre = StringField('Nombre:') 
+    Descripcion = StringField('Descripcion:')

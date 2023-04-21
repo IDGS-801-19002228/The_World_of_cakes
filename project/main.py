@@ -1,28 +1,26 @@
 
 from multiprocessing.dummy import current_process
-from flask import Blueprint, render_template
-
-from flask_security import login_required, current_user, roles_accepted
-
-from flask_security.decorators import roles_required
+from flask import Blueprint, render_template, redirect, url_for
+from flask_login import login_required, current_user
+import logging
 
 from . import db
 
-from .models import Role
-
-
 main = Blueprint('main',__name__)
 
-
+#Definimos la ruta principal
 @main.route('/')
-def principal():
-    return render_template('principal.html')
+def index():
+    return render_template('login.html')
 
-@main.route('/profile')
-@login_required
-def profile():
-    return render_template('profile.html', name=current_user.name)
+#Definimos la ruta a la pagina de perfil
+@main.route('/admin')
+@login_required #Para proteger la ruta con inicio de session
+def admin():
+    return redirect(url_for('auth.verProductos'))
 
-@main.route('/contacto')
-def contacto():
-    return render_template('contacto.html')
+#Definimos la ruta a la pagina de perfil
+@main.route('/usuario')
+@login_required #Para proteger la ruta con inicio de session
+def usuario():
+    return render_template('inicioUsuario.html', name=current_user.name)
