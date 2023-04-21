@@ -53,10 +53,10 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #0000;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     font-weight: 600;
     transition: 0.7s;
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 header.abajo .logo,

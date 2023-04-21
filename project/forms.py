@@ -42,8 +42,9 @@ class EmpleadoForm(Form):
     NumeroCasa = IntegerField('NumeroCasa:')
     Colonia = StringField('Colonia:')
     Codigo_postal = IntegerField('Codigo_postal:')
-    Correo_electronico = StringField('Correo_electronico')
-    TelefonoC = StringField('TelefonoC')
+    Correo_electronico = StringField('Correo_electronico:')
+    Contraseña = StringField('Contraseña:')
+    TelefonoC = StringField('TelefonoC:')
 
 class ProveedorForm(Form):
     id = IntegerField('Proveedor')
@@ -65,3 +66,18 @@ class RecetarioForm(Form):
     nombre = StringField('Nombre:') 
     descripcion = StringField('Descripcion:')
     numero_existencias = IntegerField('Numero_existencias:')
+    
+class ClienteForm(Form):
+    id = IntegerField('id_cliente')
+    Nombre = StringField('Nombre:')
+    ApellidoP = StringField('ApellidoP:')
+    ApellidoM = StringField('ApellidoM:')
+    Numero_cliente = StringField('Numero_cliente:')
+    Fecha_nacimiento = StringField('Fecha_nacimiento:')
+    Calle = StringField('Calle:')
+    NumeroCasa = IntegerField('NumeroCasa:')
+    Colonia = StringField('Colonia:')
+    Codigo_postal = IntegerField('Codigo_postal:')
+    Correo_electronico = StringField('Correo_electronico')
+    Contraseña = StringField('Contraseña')
+    Telefono = StringField('Telefono')

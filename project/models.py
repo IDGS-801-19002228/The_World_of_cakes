@@ -14,14 +14,24 @@ class User(db.Model, UserMixin):
     
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), nullable=False)
-    email = db.Column(db.String(100), unique=True)
+    Nombre = db.Column(db.String(50), nullable=False)
+    ApellidoP = db.Column(db.String(255), nullable=False)
+    ApellidoM = db.Column(db.String(255), nullable=False)
+    Numero_cliente = db.Column(db.String(255))
+    Fecha_nacimiento = db.Column(db.String(255))
+    Calle = db.Column(db.String(255))
+    NumeroCasa = db.Column(db.Integer)
+    Colonia = db.Column(db.String(255))
+    Codigo_postal = db.Column(db.Integer)
+    email = db.Column(db.String(255))
     password = db.Column(db.String(255), nullable=False)
-    active = db.Column(db.Boolean)
-    confirmed_at = db.Column(db.DateTime)
+    TelefonoC = db.Column(db.String(255))
+    status = db.Column(db.Integer)
     roles = db.relationship('Role',
         secondary=users_roles,
         backref= db.backref('users', lazy='dynamic'))
+    
+
 
 class Role(RoleMixin, db.Model):
     """Role model"""

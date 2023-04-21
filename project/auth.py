@@ -22,7 +22,7 @@ from flask_security.decorators import roles_required
 
 from .models import User, Empleado, Proveedor
 
-from .forms import ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm
+from .forms import ClienteForm, ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm
 from project import forms
 
 
@@ -58,9 +58,19 @@ def register():
 
 @auth.route("/register", methods=["POST"])
 def register_post():
-    email = request.form.get("email")
-    name = request.form.get("name")
-    password = request.form.get("password")
+    Nombre = request.form.get("Nombre"),
+    ApellidoP = request.form.get("ApellidoP")
+    ApellidoM = request.form.get("ApellidoM"),
+    Numero_cliente = request.form.get("Numero_cliente"),
+    Fecha_nacimiento = request.form.get("Fecha_nacimiento"),
+    Calle = request.form.get("Calle"),
+    NumeroCasa = request.form.get("NumeroCasa"),
+    Colonia = request.form.get("Colonia"),
+    Codigo_postal = request.form.get("Codigo_postal"),
+    email = request.form.get("email"),
+    password = request.form.get("password"),
+    TelefonoC = request.form.get("TelefonoC")
+    status = 1
 
     user = User.query.filter_by(email=email).first()
 
@@ -69,7 +79,7 @@ def register_post():
         return redirect(url_for("auth.register"))
 
     userDataStore.create_user(
-        name=name,
+        name=Nombre,
         email=email,
         password=generate_password_hash(password, method="sha256"),
     )
@@ -233,6 +243,30 @@ def proveedor_admin():
     proveedores=Proveedor.query.all() 
     
     return render_template("proveedor_admin.html", form=create_form,proveedores=proveedores)
+
+'''@auth.route("/cliente_admin", methods=["GET","POST"])
+@login_required
+@roles_required("admin")
+def insert_cliente():
+    create_form = forms.ClienteForm(request.form)
+    if request.method == 'POST':
+        clie= Cliente(rfc = create_form.rfc.data,
+                       domicilio = create_form.domicilio.data,
+                       razon_social = create_form.razon_social.data,
+                       nombre = create_form.nombre.data,
+                       telefono = create_form.telefono.data,
+                       descripcion = create_form.descripcion.data,
+                       estatus=1)
+        
+        db.session.add(clie)
+        db.session.commit()
+        
+        flash('El producto se registro correctamente')
+        return redirect(url_for('auth.cliente_admin'))
+    clientes=Cliente.query.all() 
+    
+    return render_template("cliente_admin.html", form=create_form,clientes=clientes)'''
+
 
 @auth.route("/merma_admin", methods=['GET','POST'])
 def insertarMerma():
