@@ -1,3 +1,6 @@
+{% extends "index.html" %}
+
+{% block content %}
 <br>
 <br>
 <br>
@@ -6,14 +9,14 @@
     <div class="col-sm-12">
         <div class="card mt-2">
             <div class="card-header" style="background-color: #3081B5; color: #fff">
-                 <font face="Cavolini" size="4">Empleados</font> 
+                 <font face="Cavolini" size="4">Usuarios</font> 
             </div>
             <div class="card-body" style="background-color:  #D9D9D9">
                 <div class="row">
-                    <div id="" class="col-sm-9">
+                    <div id="" class="col-sm-12">
                         <div class="card">
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
-                                <font face="Cavolini" size="4">Lista de Empleados</font> 
+                                <font face="Cavolini" size="4">Lista de Usuarios</font> 
                                 <div class="form-inline float-right">
                                     
                                 </div>
@@ -27,13 +30,13 @@
                                                     <th>Nombre</th>
                                                     <th>A Paterno</th>
                                                     <th>A Materno</th>
-                                                    <th>Numero empleado</th>
                                                     <th>Fecha nacimiento</th>
                                                     <th>Calle</th>
                                                     <th>Numero</th>
                                                     <th>Colonia</th>
                                                     <th>Codigo Postal</th>
                                                     <th>Correo electronico</th>
+                                                    <th>Contraseña</th>
                                                     <th>Telefono</th>
                                                     <th>Estatus</th>
                                                     <th>Eliminar</th>
@@ -41,23 +44,23 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {%for emple in empleados%}
+                                                {%for usuarios in usuarios%}
                                                 <tr>
-                                                    <td>{{emple.Nombre}}</td>
-                                                    <td>{{emple.ApellidoP}}</td>
-                                                    <td>{{emple.ApellidoM}}</td>
-                                                    <td>{{emple.Numero_empleado}}</td>
-                                                    <td>{{emple.Fecha_nacimiento}}</td>
-                                                    <td>{{emple.Calle}}</td>
-                                                    <td>{{emple.NumeroCasa}}</td>
-                                                    <td>{{emple.Colonia}}</td>
-                                                    <td>{{emple.Codigo_postal}}</td>
-                                                    <td>{{emple.Correo_electronico}}</td>
-                                                    <td>{{emple.TelefonoC}}</td>
-                                                    <td>{{emple.status}}</td>
-                                                    <td><a href="eliminar?id={{emple.id_empleado}}" 
+                                                    <td>{{usuarios.name}}</td>
+                                                    <td>{{usuarios.ApellidoP}}</td>
+                                                    <td>{{usuarios.ApellidoM}}</td>
+                                                    <td>{{usuarios.Fecha_nacimiento}}</td>
+                                                    <td>{{usuarios.Calle}}</td>
+                                                    <td>{{usuarios.NumeroCasa}}</td>
+                                                    <td>{{usuarios.Colonia}}</td>
+                                                    <td>{{usuarios.Codigo_postal}}</td>
+                                                    <td>{{usuarios.email}}</td>
+                                                    <td>{{usuarios.password}}</td>
+                                                    <td>{{usuarios.TelefonoC}}</td>
+                                                    <td>{{usuarios.active}}</td>
+                                                    <td><a href="eliminar?id={{usuarios.id}}" 
                                                         class="btn btn-danger"><i class="icon-remove icon-white"></i>Eliminar</a></td>
-                                                    <td><a href="modificar?id={{emple.id_empleado}}" 
+                                                    <td><a href="modificar?id={{usuarios.id}}" 
                                                         class="btn btn-warning"><i class="icon-pencil icon-white"></i>Modificar</a></td>
                                                 </tr>
                                                 {%endfor%}
@@ -73,3 +76,5 @@
         </div>    
     </div>
 </div>
+
+{% endblock %}

@@ -49,7 +49,7 @@ def login_post():
         return redirect(url_for("auth.login"))
 
     login_user(user, remember=remember)
-    return redirect(url_for("main.profile"))
+    return redirect(url_for("main.principal"))
 
 
 @auth.route("/register")
@@ -73,7 +73,7 @@ def register_post():
     password = request.form.get("password")
 
     user = User.query.filter_by(email=email).first()
-
+    #usuarios=User.query.all()
     if user:
         flash("El correo electrónico ya existe")
         return redirect(url_for("auth.register"))
@@ -142,6 +142,13 @@ def pedidos():
 @roles_required("admin")
 def finanzas():
     return render_template("finanzas.html")
+
+@auth.route("/clientes_admin", methods=["GET"])
+@login_required
+@roles_required("admin")
+def clientes_admin():        
+    usuarios=User.query.all() 
+    return render_template("clientes_admin.html",usuarios=usuarios)
 
 @auth.route("/empleados", methods=["GET","POST"])
 @login_required

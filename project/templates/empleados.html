@@ -20,7 +20,7 @@
             </div>
             <div class="card-body" style="background-color:  #D9D9D9">
                 <div class="row">
-                    <div id="" class="col-sm-3">
+                    <div id="" class="col-sm-12">
                         <div class="card">
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
                                 <font face="Cavolini" size="4">Detalles</font> 
@@ -91,7 +91,7 @@
                             </form>   
                         </div>                        
                     </div>
-                    <div id="" class="col-sm-9">
+                    <div id="" class="col-sm-12">
                         <div class="card">
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
                                 <font face="Cavolini" size="4">Lista de Empleados</font> 
@@ -124,7 +124,7 @@
                                             <tbody>
                                                 {%for emple in empleados%}
                                                 <tr>
-                                                    <td>{{emple.Nombre}}</td>
+                                                    <td>{{emple.name}}</td>
                                                     <td>{{emple.ApellidoP}}</td>
                                                     <td>{{emple.ApellidoM}}</td>
                                                     <td>{{emple.Numero_empleado}}</td>
@@ -133,9 +133,9 @@
                                                     <td>{{emple.NumeroCasa}}</td>
                                                     <td>{{emple.Colonia}}</td>
                                                     <td>{{emple.Codigo_postal}}</td>
-                                                    <td>{{emple.Correo_electronico}}</td>
+                                                    <td>{{emple.email}}</td>
                                                     <td>{{emple.TelefonoC}}</td>
-                                                    <td>{{emple.status}}</td>
+                                                    <td>{{emple.estatus}}</td>
                                                     <td><a href="eliminar?id={{emple.id_empleado}}" 
                                                         class="btn btn-danger"><i class="icon-remove icon-white"></i>Eliminar</a></td>
                                                     <td><a href="modificar?id={{emple.id_empleado}}" 
