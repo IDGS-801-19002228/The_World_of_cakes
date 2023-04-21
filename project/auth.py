@@ -14,7 +14,7 @@ from flask_security.utils import (
 )
 
 
-from .models import Merma, Product, Role, User
+from .models import Merma, Product, Recetario, Role, User
 
 from . import db, userDataStore
 
@@ -22,7 +22,7 @@ from flask_security.decorators import roles_required
 
 from .models import User, Empleado, Proveedor
 
-from .forms import ProductForm, EmpleadoForm, ProveedorForm
+from .forms import ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm
 from project import forms
 
 
@@ -255,6 +255,24 @@ def insertarMerma():
     
     mermas=Merma.query.all() 
     return render_template('merma_admin.html',form = create_form, mermas=mermas)
+
+@auth.route("/registroRecetario_admin", methods=['GET','POST'])
+def registroRecetario():
+    create_form = forms.RecetarioForm(request.form)
+    if request.method == 'POST':
+        rece = Recetario(nombre = create_form.nombre.data,      
+                            descripcion = create_form.descripcion.data,
+                            numero_Existencias = create_form.numero_existencias.data
+                            )
+        #Realizar el insert en la bd
+        db.session.add(rece)
+        db.session.commit()
+        
+        flash('La receta se registro correctamente')
+        return redirect(url_for('auth.recetario'))
+    
+    recetas=Recetario.query.all() 
+    return render_template('recetario.html',form = create_form, recetas=recetas)
 
 @auth.route("/logout")
 @login_required

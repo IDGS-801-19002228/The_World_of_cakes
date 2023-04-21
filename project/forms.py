@@ -59,3 +59,9 @@ class MermaForm (Form):
     nombre_producto = StringField('Nombre del producto')
     cantidad_unidad = IntegerField('Cantidad o unidad:')
     precio_venta = FloatField('Precio venta / Precio compra')
+    
+class RecetarioForm(Form):
+    id_recetario = IntegerField('id_recetario')
+    nombre = StringField('Nombre:') 
+    descripcion = StringField('Descripcion:')
+    numero_existencias = IntegerField('Numero_existencias:')

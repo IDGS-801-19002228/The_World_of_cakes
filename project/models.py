@@ -84,3 +84,11 @@ class Merma (db.Model, UserMixin):
     precio_venta = db.Column(db.String(100))
     id_empleado = db.Column(db.Integer,db.ForeignKey('empleado.id_empleado'))
     
+
+class Recetario(db.Model, UserMixin):
+    """Recetario account model"""
+    __tablename__ = 'recetario'
+    id_recetario = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(100), nullable=False)
+    descripcion = db.Column(db.String(255), nullable=False)
+    numero_Existencias = db.Column(db.Integer, nullable=False)

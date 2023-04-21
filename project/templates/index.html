@@ -65,6 +65,9 @@
                         <li>
                           <a href="{{ url_for('auth.insertarMerma') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Mermas</a>
                         </li>
+                        <li>
+                          <a href="{{ url_for('auth.registroRecetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
+                        </li>
                     {% endif %}
                 {% endif %}
                 {% if current_user.is_authenticated %}
