@@ -25,68 +25,83 @@
   </head>
 
   <body>
-    <!-- style="background-image: url('../static/img/fondo2.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed;" -->
-    <section class="hero is-white is-fullheight" style="background-color: grey;">
-      <section>
-        {% with messages = get_flashed_messages() %}
-          {% if messages %}
-            <div class="notification is-danger">{{ messages[0] }}</div>
-          {% endif %}
-        {% endwith %}
-      </section>
+    <!-- style="background-image: url('../static/img/fondo5.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed;" -->
+    <section class="hero is-white is-fullheight" style="background-image: url('../static/img/fondo5.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed;">
+      
       <header class="">
         <img src="../static/img/ej4.png" width="100" height="90" />
         <nav>
-          <ul>
-            <li>
-              <a href="{{ url_for('main.principal') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Inicio</a>
-            </li>
-            {% if current_user.is_authenticated %}
-              {% if current_user.has_role('admin') %}
+            <ul>
                 <li>
-                  <a href="{{ url_for('auth.administracion') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Administracion</a>
+                    <a href="{{ url_for('main.principal') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Inicio</a>
                 </li>
                 <li>
-                  <a href="{{ url_for('main.profile') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Perfil</a>
+                    <a href="{{ url_for('auth.productos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Catalogo de productos</a>
                 </li>
+                {% if not current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('auth.login') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('auth.register') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Registro</a>
+                    </li>
+                {% endif %}
+                <!--Seccion de Administrador-->
+                {% if current_user.is_authenticated %}
+                    {% if current_user.has_role('admin') %}
+                        <li>
+                            <a href="{{ url_for('auth.administracion_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Administracion</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('auth.finanzas') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Finanzas</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('auth.empleados') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Empleados</a>
+                        </li>
+                        <li>
+                          <a href="{{ url_for('auth.proveedor_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Proveedores</a>
+                        </li>
+                        <li>
+                          <a href="{{ url_for('auth.insertarMerma') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Mermas</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                    {% if current_user.has_role('empleado') %}
+                        <li>
+                            <a href="{{ url_for('auth.administracion_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Administracion</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('auth.finanzas_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Finanzas</a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('auth.pedidos_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                    {% if current_user.has_role('repartidor') %}
+                        <li>
+                            <a href="{{ url_for('auth.pedidos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
                 <li>
-                  <a href="{{ url_for('auth.finanzas') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Finanzas</a>
+                    <a href="{{ url_for('main.contacto') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Contacto</a>
                 </li>
-                <li>
-                  <a href="{{ url_for('auth.empleados') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Empleados</a>
-                </li>
-              {% endif %}
-            {% endif %}
-            {% if not current_user.is_authenticated %}
-              <li>
-                <a href="{{ url_for('auth.login') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Login</a>
-              </li>
-              <li>
-                <a href="{{ url_for('auth.register') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Registro</a>
-              </li>
-            {% endif %}
-            <li>
-              <a href="{{ url_for('auth.productos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Catalogo de productos</a>
-            </li>
-            <li>
-              <a href="{{ url_for('main.contacto') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Contacto</a>
-            </li>
-            {% if current_user.is_authenticated %}
-              <li>
-                <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Cerrar Sesion</a>
-              </li>
-            {% endif %}
-            {% if current_user.is_authenticated %}
-              {% if current_user.has_role('repartidor') %}
-                <li>
-                  <a href="{{ url_for('auth.pedidos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
-                </li>
-              {% endif %}
-            {% endif %}
+                
+                {% if current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('main.profile') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Cerrar Sesion</a>
+                    </li>
+                {% endif %}
           </ul>
         </nav>
       </header>
-
+      
       <div class="hero-body">
         <div class="container has-text-centered">
           {% block content %}

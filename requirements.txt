@@ -6,3 +6,6 @@ mysqlclient
 flask-marshmallow
 bcrypt
 flask-blueprint
+pymysql
+decouple
+#SQLAlchemy

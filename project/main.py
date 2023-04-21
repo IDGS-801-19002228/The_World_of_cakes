@@ -10,7 +10,6 @@ from . import db
 
 from .models import Role
 
-
 main = Blueprint('main',__name__)
 
 
