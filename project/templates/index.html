@@ -30,7 +30,7 @@
     <section class="hero is-white is-fullheight" style="background-image: url('../static/img/fondo5.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed;">
       
       <header class="">
-        <!--<img src="../static/img/ej4.png" class="margin-left: ml-auto;" width="100" height="90" />-->
+        <img src="../static/img/ej4.png" class="margin-left: ml-auto;" width="100" height="90" />
         <nav>
             <ul>
                 <li>
@@ -69,7 +69,7 @@
                           <a href="{{ url_for('auth.registroRecetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
                         </li>
                         <li>
-                          <a href="{{ url_for('auth.clientes_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Clientes</a>
+                          <a href="{{ url_for('auth.clientes_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Usuarios</a>
                         </li>
                     {% endif %}
                 {% endif %}
@@ -82,7 +82,13 @@
                             <a href="{{ url_for('auth.finanzas_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Finanzas</a>
                         </li>
                         <li>
-                            <a href="{{ url_for('auth.pedidos_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
+                          <a href="{{ url_for('auth.proveedor_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Proveedores</a>
+                        </li>
+                        <li>
+                          <a href="{{ url_for('auth.insertarMerma') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Mermas</a>
+                        </li>
+                        <li>
+                          <a href="{{ url_for('auth.registroRecetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
                         </li>
                     {% endif %}
                 {% endif %}
@@ -102,7 +108,7 @@
                         <a href="{{ url_for('main.profile') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Perfil</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Cerrar Sesion</a>
+                        <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Logout</a>
                     </li>
                 {% endif %}
           </ul>
@@ -112,11 +118,41 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           {% block content %}
-            <div class="carousel">
-              <img src="../static/img/fondo3.png" />
-              <img src="../static/img/fondo4.png" />
-              <img src="../static/img/fondo2.png" />
+          <div class="row">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-sm-4">
+                <img src="../static/img/mision2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mision</h5>
+                  <p class="card-text">Nuestra pastelería tiene como misión ofrecer a nuestros clientes productos de alta calidad, 
+                    frescos y deliciosos, utilizando los mejores ingredientes y las técnicas más innovadoras de la pastelería. 
+                    Nos comprometemos a crear experiencias excepcionales para nuestros clientes, y nos esforzamos por brindar 
+                    un servicio al cliente excepcional en todo momento.</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <br>
+          <div class="card mb-3" style="max-width: 540px; position: absolute; right: 0;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../static/img/vision.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Vision</h5>
+                  <p class="card-text">Nuestra visión es ser la pastelería preferida por nuestros clientes, 
+                    y ser reconocidos como líderes en la industria de la pastelería por nuestra excelencia en la calidad, 
+                    la innovación y el servicio al cliente. Nos esforzamos por expandir nuestro negocio y ofrecer una amplia variedad 
+                    de productos para satisfacer las necesidades de nuestros clientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
           {% endblock %}
         </div>
       </div>

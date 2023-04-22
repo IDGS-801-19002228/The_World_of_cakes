@@ -1,5 +1,30 @@
 {% extends "index.html" %}
-
 {% block content %}
-  <h1>Aqui se mostrara la informacion de contacto</h1>
+<link rel="stylesheet" href="static/estilos.css">
+
+<div  class="row d-flex justify-content-center align-items-center h-100">
+  <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+    <div class="container py-5 h-100" style="border-radius: 1rem; background-color: #ef92a3aa;">
+      <h2> Contactanos </h2>
+      <div class=" container-sm">
+        <div class="mb-3">
+          <div class="form-outline form-white mb-4">
+            <input class="form-control form-control-lg" type="email" name="email" placeholder="Email" autofocus=""/>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-outline form-white mb-4">
+            <textarea placeholder="Comentarios" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>  
+          </div>
+          
+          
+        </div>
+        <button method="POST" action="" class="btn px-5" style="color:white; background: #8f7193;">Enviar</button>
+    
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
 {% endblock %}

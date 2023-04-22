@@ -25,16 +25,15 @@
                             <p class="card-text">Descripcion: ${{productos.descripcion}}</p>
                             <!-- Description Product -->
                             <p class="card-text">Existencias: {{productos.numero_Existencias}}</p>
-                            <button style="background-color: green;" >Agregar al carrito
+                            <button type="button" class="btn btn-info">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>    
             </div>
+            
             {%endfor%}    
         </div>
     </div>
 </section>    
     
-
-
 {% endblock %}

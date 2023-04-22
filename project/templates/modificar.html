@@ -11,34 +11,52 @@
                 
             </div>
         </div>
-        <form name="sent" class="card-body" action="/security/modificar" id="form1" method="POST">
-            <div class="form-group">
-                <div class="form-group col-xs-12 float-label-form-group controls">
-                    {{render_field(form.id,class='form-control')}}
+        <form name="sent" class="card-body" action="/security/administracion_admin" id="form1" method="POST">
+            <div class="form-control">
+                <div class="form">
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.id_empleado,class='form-control',placeholder='Ingresa el nombre')}}
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="form-group col-xs-12 float-label-form-group controls">
-                    {{render_field(form.Nombre,class='form-control')}}
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Nombre,class='form-control',placeholder='Ingresa el nombre')}}
+                    </div>
                 </div>
-            </div>
-            <div class="row control-group">
-                <div class="form-group col-xs-12 float-label-form-group controls">
-                    {{render_field(form.Precio,class='form-control')}}
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Precio_Venta,class='form-control',placeholder='Ingresa el precio de venta')}}
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="form-group col-xs-12 float-label-form-group controls">
-                    {{render_field(form.Descripcion,class='form-control')}}
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Tamanio,class='form-control',placeholder='Ingresa el tamaño')}}
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="form-group col-xs-12 float-label-form-group controls">
-                    {{render_field(form.Image_url,class='form-control',placeholder='Ingresa la descripcion')}}
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Peso,class='form-control',placeholder='Ingresa el peso')}}
+                    </div>
                 </div>
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Descripcion,class='form-control',placeholder='Ingresa la descripcion')}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Numero_Existencias,class='form-control',placeholder='Ingresa el numero de existencias')}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-xs-12 float-label-form-group controls">
+                        {{render_field(form.Image_url,class='form-control',placeholder='Ingresa la url')}}
+                    </div>
+                </div>
+                <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Registrar"/>
             </div>
-            <input type="submit" id="reg-alum" class="btn btn-success" name="registra" value="Guardar"/>
-            <a class="btn btn-info" href="administracion" role="button">Cancelar</a>
+            </div>
         </form>
     </div>
    </div>

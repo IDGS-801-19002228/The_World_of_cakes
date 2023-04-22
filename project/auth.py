@@ -241,28 +241,34 @@ def administracion_admin():
 def modificar():
     create_form2=forms.ProductForm(request.form)
     if request.method=='GET':
-        id=request.args.get('id')
+        id_empleado=request.args.get('id_empleado')
         #Select * from alumnos where id==id
-        prod1=db.session.query(Product).filter(Product.id==id).first()
-        create_form2.id.data=id
-        create_form2.Nombre.data=prod1.nombre
-        create_form2.Precio.data=prod1.precio
-        create_form2.Descripcion.data=prod1.descripcion
-        create_form2.Image_url.data=prod1.image_url
+        prod1=db.session.query(Product).filter(Product.id_empleado==id_empleado).first()
+        create_form2.id_empleado.data=id_empleado
+        create_form2.Nombre.data=prod1.Nombre
+        create_form2.Precio_Venta.data=prod1.Precio_Venta
+        create_form2.Tamanio.data=prod1.Tamanio
+        create_form2.Peso.data=prod1.Peso
+        create_form2.Descripcion.data=prod1.Descripcion
+        create_form2.Numero_Existencias.data=prod1.Numero_Existencias
+        create_form2.Image_url.data=prod1.Image_url
         
     if request.method=='POST':
         #Select * from alumnos where id==id
-        id = create_form2.id.data
-        prod2=db.session.query(Product).filter(Product.id==id).first()
+        id_empleado = create_form2.id.data
+        prod2=db.session.query(Product).filter(Product.id_empleado==id_empleado).first()
         
-        prod2.nombre=create_form2.Nombre.data
-        prod2.precio=create_form2.Precio.data
-        prod2.descripcion=create_form2.Descripcion.data
-        prod2.image_url=create_form2.Image_url.data
+        prod2.Nombre=create_form2.Nombre.data,
+        prod2.Precio_Venta=create_form2.Precio_Venta.data,
+        prod2.Tamanio=create_form2.Tamanio.data,
+        prod2.Peso=create_form2.Peso.data,
+        prod2.Descripcion=create_form2.Descripcion.data,
+        prod2.Numero_Existencias=create_form2.Numero_Existencias.data,
+        prod2.Image_url=create_form2.Image_url.data
         db.session.add(prod2)
         db.session.commit()
         flash('El producto se actualizo correctamente')
-        return redirect(url_for('auth.administracion'))
+        return redirect(url_for('auth.administracion_admin'))
     return render_template('modificar.html',form=create_form2)
 
 @auth.route("/eliminar",methods=['GET','POST'])
@@ -354,6 +360,7 @@ def insertarMerma():
                        nombre_producto = create_form.nombre_producto.data,
                        cantidad_unidad = create_form.cantidad_unidad.data,
                        precio_venta = create_form.precio_venta.data,
+                       id_empleado = 2
                       )
        #Realizar el insert en la bd
         db.session.add(merma)
