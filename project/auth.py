@@ -1,6 +1,7 @@
 from itertools import product
 import random
 from flask import Blueprint, Flask, render_template, redirect, url_for, request, flash
+from sqlalchemy import desc
 
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -15,7 +16,7 @@ from flask_security.utils import (
 )
 
 
-from .models import Merma, Product, Recetario, Role, User
+from .models import CompraMateriaPrima, DetalleCompraMateria, MateriaPrima, Merma, Product, Recetario, Role, User
 
 from . import db, userDataStore
 
@@ -23,7 +24,7 @@ from flask_security.decorators import roles_required
 
 from .models import User, Empleado, Proveedor
 
-from .forms import ClienteForm, ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm
+from .forms import ClienteForm, ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm, CompraForm
 from project import forms
 import logging
 
@@ -353,27 +354,29 @@ def insert_cliente():
 def insertarMerma():
     create_form = forms.MermaForm(request.form)
   
-   
+    empleado = Empleado.query.all()
     if request.method == 'POST':
         
         merma = Merma(
                        nombre_producto = create_form.nombre_producto.data,
                        cantidad_unidad = create_form.cantidad_unidad.data,
                        precio_venta = create_form.precio_venta.data,
-                       id_empleado = 2
+                       id_empleado = request.form['id_empleado']
                       )
        #Realizar el insert en la bd
         db.session.add(merma)
         db.session.commit()
         
         flash('La merma se registro correctamente')
-        return redirect(url_for('auth.merma_admin'))
+        #return redirect(url_for('auth.merma_admin'))
     
     mermas=Merma.query.all() 
     return render_template('merma_admin.html',form = create_form, mermas=mermas)
 
 @auth.route("/registroRecetario_admin", methods=['GET','POST'])
-def registroRecetario():
+@login_required
+@roles_required("admin")
+def registroRecetario_admin():
     create_form = forms.RecetarioForm(request.form)
     if request.method == 'POST':
         rece = Recetario(nombre = create_form.nombre.data,      
@@ -385,10 +388,47 @@ def registroRecetario():
         db.session.commit()
         
         flash('La receta se registro correctamente')
-        return redirect(url_for('auth.recetario'))
+        return redirect(url_for('auth.registroRecetario_admin'))
     
     recetas=Recetario.query.all() 
-    return render_template('recetario.html',form = create_form, recetas=recetas)
+    return render_template('registroRecetario_admin.html',form = create_form, recetas=recetas)
+
+@auth.route("/compraMateria", methods=['GET','POST'])
+@login_required
+@roles_required("admin")
+def compraM():
+    create_form = forms.CompraForm(request.form)
+  
+    #select * from proveedor
+    proveedor = Proveedor.query.all()
+    materiaP = MateriaPrima.query.all()
+    print(proveedor)
+    if request.method == 'POST':
+        
+        compra = CompraMateriaPrima(
+                       fecha_Compra = create_form.fecha_compra.data,
+                       folio = create_form.folio.data,
+                       id_proveedor =request.form['idProveedor'],
+                       id_Empleado = create_form.id.data
+                      )
+       #Realizar el insert en la bd
+        db.session.add(compra)
+    
+        ultimo_id = db.session.query(CompraMateriaPrima.id).order_by(desc(CompraMateriaPrima.id)).first()[0]
+       
+        detalle = DetalleCompraMateria(
+                       cantidad = create_form.cantidad.data,
+                       costo =create_form.costo.data,
+                       id_compraMateria =ultimo_id,
+                       id_materiaPrima = request.form['idMateriaP']
+                      )
+        db.session.add(detalle)
+        print(ultimo_id)
+        db.session.commit()
+
+        flash('la Materia se agrego correctamente')
+       # return redirect(url_for('emple.administracion'))
+    return render_template('insertarMateria.html',form=create_form, proveedor=proveedor,materiaP=materiaP)
 
 @auth.route("/logout")
 @login_required

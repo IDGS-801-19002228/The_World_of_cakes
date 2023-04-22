@@ -66,7 +66,10 @@
                           <a href="{{ url_for('auth.insertarMerma') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Mermas</a>
                         </li>
                         <li>
-                          <a href="{{ url_for('auth.registroRecetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
+                          <a href="{{ url_for('auth.registroRecetario_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
+                        </li>
+                        <li>
+                          <a href="{{ url_for('auth.compraM') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Materia Prima</a>
                         </li>
                         <li>
                           <a href="{{ url_for('auth.clientes_admin') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Usuarios</a>
@@ -88,7 +91,7 @@
                           <a href="{{ url_for('auth.insertarMerma') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Mermas</a>
                         </li>
                         <li>
-                          <a href="{{ url_for('auth.registroRecetario') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
+                          <a href="{{ url_for('auth.registroRecetario_empleado') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Recetario</a>
                         </li>
                     {% endif %}
                 {% endif %}

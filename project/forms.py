@@ -5,7 +5,7 @@ from wtforms import validators
 from wtforms import EmailField
 
 from flask_wtf import FlaskForm
-from  wtforms.fields import StringField, PasswordField, SubmitField, TextAreaField, FloatField
+from  wtforms.fields import DateField, StringField, PasswordField, SubmitField, TextAreaField, FloatField
 from wtforms.validators import DataRequired
 
 
@@ -22,7 +22,7 @@ def my_validate(form, field):
     #submit = SubmitField('Enviar')'''
 
 class ProductForm(Form):
-    id_empleado = IntegerField('id_producto')
+    id_producto = IntegerField('id_producto')
     Nombre = StringField('Nombre:')                       
     Precio_Venta = IntegerField('Precio_Venta:')
     Tamanio = IntegerField('Porciones:')
@@ -32,7 +32,7 @@ class ProductForm(Form):
     Image_url = StringField('Image_url:')
     
 class EmpleadoForm(Form):
-    id_empleado = IntegerField('id_empleado')
+    id = IntegerField('id_empleado')
     name = StringField('Nombre:')
     ApellidoP = StringField('ApellidoP:')
     ApellidoM = StringField('ApellidoM:')
@@ -60,6 +60,7 @@ class MermaForm (Form):
     nombre_producto = StringField('Nombre del producto')
     cantidad_unidad = IntegerField('Cantidad o unidad:')
     precio_venta = FloatField('Precio venta / Precio compra')
+    id_empleado = FloatField('id empleado:')
     
 class RecetarioForm(Form):
     id_recetario = IntegerField('id_recetario')
@@ -81,3 +82,12 @@ class ClienteForm(Form):
     Correo_electronico = StringField('Correo_electronico')
     Contraseña = StringField('Contraseña')
     Telefono = StringField('Telefono')
+    
+class CompraForm (Form):
+    id = IntegerField('id')
+    fecha_compra = DateField('fecha_compra:')
+    folio =IntegerField('folio')
+    id_Proveedor = SelectField('Proveedor') 
+    id_Empleado = IntegerField('Empleado')  
+    cantidad = IntegerField('Cantidad')
+    costo = IntegerField('costo')

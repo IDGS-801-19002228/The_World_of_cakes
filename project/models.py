@@ -1,4 +1,5 @@
 
+import datetime
 from . import db
 from flask_sqlalchemy import SQLAlchemy
 
@@ -68,7 +69,7 @@ class Role_admin(RoleMixin, db.Model):
 class Product(db.Model, UserMixin):
     """Producto account model"""
     __tablename__ = 'product'
-    id_empleado = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(100), nullable=False)
     precio_Venta = db.Column(db.Integer, nullable=False)
     tamanio = db.Column(db.Integer, nullable=False)
@@ -114,8 +115,8 @@ class Merma (db.Model, UserMixin):
     __tablename__ = 'merma' #mapear la tabla
     #especificar el tipo de dato atributos de tal tabla
     id = db.Column(db.Integer,primary_key = True)
-    nombre_producto = db.Column(db.String(15))
-    cantidad_unidad = db.Column(db.String(50))
+    nombre_producto = db.Column(db.String(255))
+    cantidad_unidad = db.Column(db.String(255))
     precio_venta = db.Column(db.String(100))
     id_empleado = db.Column(db.Integer,db.ForeignKey('empleado.id_empleado'))
     
@@ -127,3 +128,34 @@ class Recetario(db.Model, UserMixin):
     nombre = db.Column(db.String(100), nullable=False)
     descripcion = db.Column(db.String(255), nullable=False)
     numero_Existencias = db.Column(db.Integer, nullable=False)
+    
+    
+class DetalleCompraMateria (db.Model, UserMixin):
+    _tablename_ = 'detalle_compra_materiap' #mapear la tabla 
+    
+    #especificar el tipo de dato atributos de tal tabla
+    id = db.Column(db.Integer,primary_key = True)  
+    cantidad = db.Column(db.String(50))
+    costo = db.Column(db.Integer)
+    id_compraMateria = db.Column(db.Integer,db.ForeignKey('compra_materia.id')),
+    id_materiaPrima =  db.Column(db.Integer,db.ForeignKey('materia_prima.id'))
+    
+
+class CompraMateriaPrima (db.Model,UserMixin):
+    _tablename_ = 'compra_materia' #mapear la tabla 
+    
+    #especificar el tipo de dato atributos de tal tabla
+    id = db.Column(db.Integer,primary_key = True)  
+    fecha_Compra = db.Column(db.DateTime, default = datetime.datetime.now) #crear un campo para registar la fecha y la hora actual 
+    folio = db.Column(db.Integer)
+    id_proveedor = db.Column(db.Integer,db.ForeignKey('proveedor.id'))
+    id_Empleado =  db.Column(db.Integer,db.ForeignKey('empleado.id_empleado'))
+
+class MateriaPrima (db.Model, UserMixin):
+    _tablename_ = 'materia_prima' #mapear la tabla 
+    
+    id = db.Column(db.Integer,primary_key = True) 
+    nombre = db.Column(db.String(50))
+    marca = db.Column(db.String(100))
+    cantidad = db.Column(db.Integer)
+    unidad_medida = db.Column(db.String(10))
