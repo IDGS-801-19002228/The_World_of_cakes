@@ -9042,3 +9042,6 @@
 2023-04-22 23:22:12,705:INFO:127.0.0.1 - - [22/Apr/2023 23:22:12] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
 2023-04-22 23:28:08,502:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\forms.py', reloading
 2023-04-22 23:28:08,688:INFO: * Restarting with stat
+2023-04-22 23:28:12,209:INFO:Se inicio la aplicacion
+2023-04-22 23:28:12,224:WARNING: * Debugger is active!
+2023-04-22 23:28:12,232:INFO: * Debugger PIN: 577-661-229
