@@ -28,7 +28,7 @@
                                     
                                     </div>
                                 </div>
-                                <form name="sent" class="card-body" action="/security/empleados" id="form1" method="POST">
+                                <form name="sent" class="card-body" action="/security/modificar_empleado_admin" id="form1" method="POST">
                                     <div class="form-control">
                                         <div class="form">
                                             <div class="form-group">
@@ -91,61 +91,6 @@
                                     </div>
                                 </form>   
                             </div>                        
-                        </div>
-                        <div id="" class="col-sm-9">
-                            <div class="card">
-                                <div class="card-header" style="background-color: #3081B5; color: #fff">
-                                    <font face="Cavolini" size="4">Lista de Empleados</font> 
-                                    <div class="form-inline float-right">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="table-responsive">
-                                            <table class="table table-hover">
-                                                <thead class="" style="background-color: #D97B29">
-                                                    <tr class="tr-head" >
-                                                        <th>Nombre</th>
-                                                        <th>A Paterno</th>
-                                                        <th>A Materno</th>
-                                                        <th>Numero empleado</th>
-                                                        <th>Fecha nacimiento</th>
-                                                        <th>Calle</th>
-                                                        <th>Numero</th>
-                                                        <th>Colonia</th>
-                                                        <th>Codigo Postal</th>
-                                                        <th>Correo electronico</th>
-                                                        <th>Telefono</th>
-                                                        <th>Estatus</th>
-                                                        <th>Eliminar</th>
-                                                        <th>Modificar</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {%for emple in empleados%}
-                                                        <tr>
-                                                            <td>{{emple.name}}</td>
-                                                            <td>{{emple.ApellidoP}}</td>
-                                                            <td>{{emple.ApellidoM}}</td>
-                                                            <td>{{emple.Numero_empleado}}</td>
-                                                            <td>{{emple.Fecha_nacimiento}}</td>
-                                                            <td>{{emple.Calle}}</td>
-                                                            <td>{{emple.NumeroCasa}}</td>
-                                                            <td>{{emple.Colonia}}</td>
-                                                            <td>{{emple.Codigo_postal}}</td>
-                                                            <td>{{emple.email}}</td>
-                                                            <td>{{emple.TelefonoC}}</td>
-                                                            <td>{{emple.estatus}}</td>
-                                                            <td><a type="button" class="btn btn-danger" href="eliminar_empleado_admin?id={{emple.id}}">Eliminar</a></td>
-                                                            <td><a type="button" class="btn btn-warning" href="modificar_empleado_admin?id={{emple.id}}">Modificar</a></td>
-                                                        </tr>
-                                                    {%endfor%}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>        
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,82 @@
+{% extends "index.html" %} 
+ 
+ {% block content%}
+   {%from "_macros.html" import render_field%}
+<link rel="stylesheet" type="text/css" href="static/sweetalert2/sweetalert2.min.css">
+
+<script type="text/javascript" src="static/sweetalert2/sweetalert2.min.js" ></script>
+
+<link rel="stylesheet" href="static/estilos.css" >
+<br>
+<br>
+<br>
+<br>
+<div class="row" id="productos">
+    <div class="col-sm-12">
+        <div class="card mt-2">
+            <div class="card-header" style="background-color: #3081B5; color: #fff">
+                 <font face="Cavolini" size="4">Productos</font> 
+            </div>
+            <div class="card-body" style="background-color:  #D9D9D9">
+                <div class="row">
+                    <div id="" class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #3081B5; color: #fff">
+                                <font face="Cavolini" size="4">Detalles</font> 
+                            </div>
+                            <form name="sent" class="card-body" action="/security/modificar_administracion_admin" id="form1" method="POST">
+                                <div class="form-control">
+                                    <div class="form">
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.id,class='form-control',placeholder='id')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Nombre,class='form-control',placeholder='Ingresa el nombre')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Precio_Venta,class='form-control',placeholder='Ingresa el precio de venta')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Tamanio,class='form-control',placeholder='Ingresa el tamaño')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Peso,class='form-control',placeholder='Ingresa el peso')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Descripcion,class='form-control',placeholder='Ingresa la descripcion')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Numero_Existencias,class='form-control',placeholder='Ingresa el numero de existencias')}}
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-group col-xs-12 float-label-form-group controls">
+                                                {{render_field(form.Image_url,class='form-control',placeholder='Ingresa la url')}}
+                                            </div>
+                                        </div>
+                                        <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Guardar"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+{% endblock %}

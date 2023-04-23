@@ -70,13 +70,13 @@ class Product(db.Model, UserMixin):
     """Producto account model"""
     __tablename__ = 'product'
     id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(100), nullable=False)
-    precio_Venta = db.Column(db.Integer, nullable=False)
-    tamanio = db.Column(db.Integer, nullable=False)
-    peso = db.Column(db.Integer, nullable=False)
-    descripcion = db.Column(db.String(255), nullable=False)
-    numero_Existencias = db.Column(db.Integer, nullable=False)
-    image_url = db.Column(db.String(200), nullable=False)
+    Nombre = db.Column(db.String(100), nullable=False)
+    Precio_Venta = db.Column(db.Integer, nullable=False)
+    Tamanio = db.Column(db.Integer, nullable=False)
+    Peso = db.Column(db.Integer, nullable=False)
+    Descripcion = db.Column(db.String(255), nullable=False)
+    Numero_Existencias = db.Column(db.Integer, nullable=False)
+    Image_url = db.Column(db.Text(255), nullable=False)
     
 class Empleado(db.Model, UserMixin):
     """Employe account model"""

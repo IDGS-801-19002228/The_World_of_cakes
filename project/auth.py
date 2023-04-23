@@ -222,10 +222,10 @@ def empleados():
     return render_template("empleados.html", form=create_form, empleados=empleados)
 
 
-@auth.route("/modificar_empleado", methods=["GET", "POST"])
+@auth.route("/modificar_empleado_admin", methods=["GET", "POST"])
 @login_required
 @roles_required("admin")
-def modificar_empleado():
+def modificar_empleado_admin():
     create_form2 = forms.EmpleadoForm(request.form)
     if request.method == 'GET':
         id = request.args.get('id')
@@ -264,9 +264,9 @@ def modificar_empleado():
         db.session.add(prod2)
         db.session.commit()
         flash('El producto se actualizo correctamente')
-        return redirect(url_for('auth.administracion_admin'))
+        return redirect(url_for('auth.empleados'))
     empleados = Empleado.query.all()
-    return render_template("empleados.html", form=create_form2, empleados=empleados)
+    return render_template("modificar_empleado_admin.html", form=create_form2, empleados=empleados)
 
 
 @auth.route("/administracion_admin", methods=["GET", "POST"])
@@ -275,13 +275,13 @@ def modificar_empleado():
 def administracion_admin():
     create_form = forms.ProductForm(request.form)
     if request.method == 'POST':
-        prod = Product(nombre=create_form.Nombre.data,
-                       precio_Venta=create_form.Precio_Venta.data,
-                       tamanio=create_form.Tamanio.data,
-                       peso=create_form.Peso.data,
-                       descripcion=create_form.Descripcion.data,
-                       numero_Existencias=create_form.Numero_Existencias.data,
-                       image_url=create_form.Image_url.data)
+        prod = Product(Nombre=create_form.Nombre.data,
+                       Precio_Venta=create_form.Precio_Venta.data,
+                       Tamanio=create_form.Tamanio.data,
+                       Peso=create_form.Peso.data,
+                       Descripcion=create_form.Descripcion.data,
+                       Numero_Existencias=create_form.Numero_Existencias.data,
+                       Image_url=create_form.Image_url.data)
 
         db.session.add(prod)
         db.session.commit()
@@ -293,42 +293,43 @@ def administracion_admin():
     return render_template("administracion_admin.html", form=create_form, productos=productos)
 
 
-@auth.route("/modificar", methods=["GET", "POST"])
+@auth.route("/modificar_administracion_admin", methods=["GET", "POST"])
 @login_required
 @roles_required("admin")
-def modificar():
+def modificar_administracion_admin():
     create_form2 = forms.ProductForm(request.form)
     if request.method == 'GET':
         id = request.args.get('id')
         # Select * from alumnos where id==id
         prod1 = db.session.query(Product).filter(Product.id == id).first()
-        create_form2.id.data = id,
-        create_form2.Nombre.data = prod1.nombre
-        create_form2.Precio_Venta.data = prod1.precio_Venta
-        create_form2.Tamanio.data = prod1.tamanio
-        create_form2.Peso.data = prod1.peso
-        create_form2.Descripcion.data = prod1.descripcion
-        create_form2.Numero_Existencias.data = prod1.numero_Existencias
-        create_form2.Image_url.data = prod1.image_url
+        
+        create_form2.id.data = id
+        create_form2.Nombre.data = prod1.Nombre
+        create_form2.Precio_Venta.data = prod1.Precio_Venta
+        create_form2.Tamanio.data = prod1.Tamanio
+        create_form2.Peso.data = prod1.Peso
+        create_form2.Descripcion.data = prod1.Descripcion
+        create_form2.Numero_Existencias.data = prod1.Numero_Existencias
+        create_form2.Image_url.data = prod1.Image_url
 
     if request.method == 'POST':
         # Select * from productos where id==id
         id = create_form2.id.data
         prod2 = db.session.query(Product).filter(Product.id == id).first()
 
-        prod2.nombre = create_form2.Nombre.data,
-        prod2.precio_Venta = create_form2.Precio_Venta.data,
-        prod2.tamanio = create_form2.Tamanio.data,
-        prod2.peso = create_form2.Peso.data,
-        prod2.descripcion = create_form2.Descripcion.data,
-        prod2.numero_Existencias = create_form2.Numero_Existencias.data,
-        prod2.image_url = create_form2.Image_url.data
+        prod2.Nombre = create_form2.Nombre.data,
+        prod2.Precio_Venta = create_form2.Precio_Venta.data,
+        prod2.Tamanio = create_form2.Tamanio.data,
+        prod2.Peso = create_form2.Peso.data,
+        prod2.Descripcion = create_form2.Descripcion.data,
+        prod2.Numero_Existencias = create_form2.Numero_Existencias.data,
+        prod2.Image_url = create_form2.Image_url.data
 
         db.session.add(prod2)
         db.session.commit()
         flash('El producto se actualizo correctamente')
         return redirect(url_for('auth.administracion_admin'))
-    return render_template('modificar.html', form=create_form2)
+    return render_template('modificar_administracion_admin.html', form=create_form2)
 
 
 @auth.route("/eliminar", methods=['GET', 'POST'])
@@ -385,6 +386,43 @@ def proveedor_admin():
     proveedores = Proveedor.query.all()
 
     return render_template("proveedor_admin.html", form=create_form, proveedores=proveedores)
+
+@auth.route("/modificar_proveedor_admin", methods=["GET", "POST"])
+@login_required
+@roles_required("admin")
+def modificar_proveedor_admin():
+    create_form2 = forms.ProveedorForm(request.form)
+    if request.method == 'GET':
+        id = request.args.get('id')
+        # Select * from alumnos where id==id
+        prod1 = db.session.query(Proveedor).filter(Proveedor.id == id).first()
+        
+        create_form2.id.data = id
+        create_form2.nombre.data = prod1.nombre
+        create_form2.rfc.data = prod1.rfc
+        create_form2.telefono.data = prod1.telefono
+        create_form2.domicilio.data = prod1.domicilio
+        create_form2.razon_social.data = prod1.razon_social
+        create_form2.descripcion.data = prod1.descripcion
+        create_form2.estatus.data = prod1.estatus
+
+    if request.method == 'POST':
+        # Select * from productos where id==id
+        id = create_form2.id.data
+        prod2 = db.session.query(Proveedor).filter(Proveedor.id == id).first()
+
+        prod2.nombre = create_form2.nombre.data,
+        prod2.rfc = create_form2.rfc.data,
+        prod2.telefono = create_form2.telefono.data,
+        prod2.domicilio = create_form2.domicilio.data,
+        prod2.razon_social = create_form2.razon_social.data,
+        prod2.descripcion = create_form2.descripcion.data
+
+        db.session.add(prod2)
+        db.session.commit()
+        flash('El proveedor se actualizo correctamente')
+        return redirect(url_for('auth.proveedor_admin'))
+    return render_template('modificar_proveedor_admin.html', form=create_form2)
 
 
 '''@auth.route("/cliente_admin", methods=["GET","POST"])

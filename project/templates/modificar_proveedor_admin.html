@@ -20,7 +20,7 @@
             </div>
             <div class="card-body" style="background-color:  #D9D9D9">
                 <div class="row">
-                    <div id="" class="col-sm-3">
+                    <div id="" class="col-sm-12">
                         <div class="card">
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
                                 <font face="Cavolini" size="4">Detalles</font> 
@@ -28,10 +28,13 @@
                                     
                                 </div>
                             </div>
-                            <form name="sent" class="card-body" action="/security/proveedor_admin" id="form1" method="POST">
+                            <form name="sent" class="card-body" action="/security/modificar_proveedor_admin" id="form1" method="POST">
                                 <div class="form-control">
                                     <div class="form">
                                     <div class="form-group">
+                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                            {{render_field(form.id,class='form-control',placeholder='Ingresa el nombre')}}
+                                        </div>
                                         <div class="form-group col-xs-12 float-label-form-group controls">
                                             {{render_field(form.nombre,class='form-control',placeholder='Ingresa el nombre')}}
                                         </div>
@@ -55,64 +58,22 @@
                                         <div class="form-group col-xs-12 float-label-form-group controls">
                                             {{render_field(form.razon_social,class='form-control',placeholder='Ingresa la url')}}
                                         </div>
-                                    </div>
-                        
+                                    </div>                        
                                     <div class="form-group">
                                         <div class="form-group col-xs-12 float-label-form-group controls">
                                             {{render_field(form.descripcion,class='form-control',placeholder='Ingresa la url')}}
                                         </div>
                                     </div>
-                                    <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Registrar"/>
+                                    <div class="form-group">
+                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                            {{render_field(form.estatus,class='form-control',placeholder='Ingresa la url')}}
+                                        </div>
+                                    </div>
+                                    <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Guardar"/>
                                 </div>
                                 </div>
                             </form>   
                         </div>                        
-                    </div>
-                    <div id="" class="col-sm-9">
-                        <div class="card">
-                            <div class="card-header" style="background-color: #3081B5; color: #fff">
-                                <font face="Cavolini" size="4">Lista de Proveedores</font> 
-                                <div class="form-inline float-right">
-                                    
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="table-responsive">
-                                        <table class="table table-hover">
-                                            <thead class="" style="background-color: #D97B29">
-                                                <tr class="tr-head" >
-                                                    <th>Nombre</th>
-                                                    <th>RFC</th>
-                                                    <th>Domicilio</th>
-                                                    <th>Razon Social</th>
-                                                    <th>Telefono</th>
-                                                    <th>Descripcion</th>
-                                                    <th>Estatus</th>
-                                                    <th>Eliminar</th>
-                                                    <th>Modificar</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {%for prov in proveedores%}
-                                                <tr>
-                                                    <td>{{prov.nombre}}</td>
-                                                    <td>{{prov.rfc}}</td>
-                                                    <td>{{prov.domicilio}}</td>
-                                                    <td>{{prov.razon_social}}</td>
-                                                    <td>{{prov.telefono}}</td>
-                                                    <td>{{prov.descripcion}}</td>
-                                                    <td>{{prov.estatus}}</td>
-                                                    <td><a type="button" class="btn btn-danger" href="eliminar_proveedor_admin?id={{prov.id}}">Eliminar</a></td>
-                                                    <td><a type="button" class="btn btn-warning" href="modificar_proveedor_admin?id={{prov.id}}">Modificar</a></td>
-                                                </tr>
-                                                {%endfor%}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>        
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

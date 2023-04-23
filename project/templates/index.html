@@ -30,7 +30,7 @@
     <section class="hero is-white is-fullheight" style="background-image: url('../static/img/fondo5.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: top; background-attachment: fixed;">
       
       <header class="">
-        <img src="../static/img/ej4.png" class="margin-left: ml-auto;" width="100" height="90" />
+        <img src="../static/img/ej4.png" class="margin-left: ml-auto;" width="90" height="90" />
         <nav>
             <ul>
                 <li>
@@ -107,9 +107,6 @@
                 </li>
                 
                 {% if current_user.is_authenticated %}
-                    <li>
-                        <a href="{{ url_for('main.profile') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Perfil</a>
-                    </li>
                     <li>
                         <a href="{{ url_for('auth.logout') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Logout</a>
                     </li>

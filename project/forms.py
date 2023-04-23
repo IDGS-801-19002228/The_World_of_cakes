@@ -22,14 +22,14 @@ def my_validate(form, field):
     #submit = SubmitField('Enviar')'''
 
 class ProductForm(Form):
-    id = IntegerField('id_producto')
+    id = IntegerField('id:')
     Nombre = StringField('Nombre:')                       
     Precio_Venta = IntegerField('Precio_Venta:')
     Tamanio = IntegerField('Porciones:')
     Peso = IntegerField('Peso:')
     Descripcion = StringField('Descripcion:')
     Numero_Existencias = IntegerField('Numero_Existencias:')
-    Image_url = StringField('Image_url:')
+    Image_url = TextAreaField('URL:')
     
 class EmpleadoForm(Form):
     id = IntegerField('id_empleado')
@@ -54,6 +54,7 @@ class ProveedorForm(Form):
     domicilio = StringField('Domicilio')
     razon_social = StringField('Razon social')
     descripcion = TextAreaField('Descripcion')
+    estatus = IntegerField('Estatus')
     
 class MermaForm (Form):
     id = IntegerField('Id Merma')

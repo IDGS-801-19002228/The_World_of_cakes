@@ -100,15 +100,20 @@
                                                     <th>Marca</th>
                                                     <th>Unidad Medida</th>
                                                     <th>Cantidad</th>
+                                                    <th>Eliminar</th>
+                                                    <th>Modificar</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="table-success">
                                                 {% for mp in materiaP %}
                                                 <tr>
                                                     <td>{{mp.nombre}}</td>
                                                     <td>{{mp.marca}}</td>
                                                     <td>{{mp.unidad_medida}}</td>
                                                     <td>{{mp.cantidad}}</td>
+                                                    <td><button href="eliminar?id={{mp.id}}"  type="button" class="btn btn-danger">Eliminar</button></td>
+                                                    <td><button href="modificar?id={{mp.id}}"  type="button" class="btn btn-warning">Modificar</button></td>
+                                                    
                                                 </tr>
                                                 {%endfor%}
                                             </tbody>
