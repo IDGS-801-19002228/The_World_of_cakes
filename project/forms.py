@@ -23,72 +23,164 @@ def my_validate(form, field):
 
 class ProductForm(Form):
     id = IntegerField('id:')
-    Nombre = StringField('Nombre:')                       
-    Precio_Venta = IntegerField('Precio_Venta:')
-    Tamanio = IntegerField('Porciones:')
-    Peso = IntegerField('Peso:')
-    Descripcion = StringField('Descripcion:')
-    Numero_Existencias = IntegerField('Numero_Existencias:')
-    Image_url = TextAreaField('URL:')
+    Nombre = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])                       
+    Precio_Venta = IntegerField('Precio_Venta:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Tamanio = IntegerField('Porciones:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Peso = IntegerField('Peso:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Descripcion = StringField('Descripcion:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Numero_Existencias = IntegerField('Numero_Existencias:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Image_url = TextAreaField('URL:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     
 class EmpleadoForm(Form):
     id = IntegerField('id_empleado')
-    name = StringField('Nombre:')
-    ApellidoP = StringField('ApellidoP:')
-    ApellidoM = StringField('ApellidoM:')
-    Numero_empleado = StringField('Numero_empleado:')
-    Fecha_nacimiento = StringField('Fecha_nacimiento:')
-    Calle = StringField('Calle:')
-    NumeroCasa = IntegerField('NumeroCasa:')
-    Colonia = StringField('Colonia:')
-    Codigo_postal = IntegerField('Codigo_postal:')
-    email = StringField('Correo_electronico:')
-    password = PasswordField('Contraseña:')
-    TelefonoC = StringField('TelefonoC:')
+    name = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    ApellidoP = StringField('ApellidoP:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    ApellidoM = StringField('ApellidoM:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Numero_empleado = StringField('Numero_empleado:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Fecha_nacimiento = StringField('Fecha_nacimiento:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Calle = StringField('Calle:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    NumeroCasa = IntegerField('NumeroCasa:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Colonia = StringField('Colonia:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Codigo_postal = IntegerField('Codigo_postal:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    email = StringField('Correo_electronico:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    password = PasswordField('Contraseña:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    TelefonoC = StringField('TelefonoC:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
 
 class ProveedorForm(Form):
     id = IntegerField('Proveedor')
-    rfc = StringField('Rfc')
-    nombre = StringField('Nombre')
-    telefono = StringField('Número Telefonico')
-    domicilio = StringField('Domicilio')
-    razon_social = StringField('Razon social')
-    descripcion = TextAreaField('Descripcion')
+    rfc = StringField('Rfc:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    nombre = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    telefono = StringField('Número Telefonico',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    domicilio = StringField('Domicilio:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    razon_social = StringField('Razon social:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    descripcion = TextAreaField('Descripcion:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     estatus = IntegerField('Estatus')
     
 class MermaForm (Form):
     id = IntegerField('Id Merma')
-    nombre_producto = StringField('Nombre del producto')
-    cantidad_unidad = IntegerField('Cantidad o unidad:')
-    precio_venta = FloatField('Precio venta / Precio compra')
+    nombre_producto = StringField('Nombre del producto:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    cantidad_unidad = IntegerField('Cantidad o unidad:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    precio_venta = FloatField('Precio venta / Precio compra:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     id_empleado = FloatField('id empleado:')
     
 class RecetarioForm(Form):
     id_recetario = IntegerField('id_recetario')
-    nombre = StringField('Nombre:') 
-    descripcion = StringField('Descripcion:')
-    numero_existencias = IntegerField('Numero_existencias:')
+    nombre = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ]) 
+    descripcion = StringField('Descripcion:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    numero_existencias = IntegerField('Numero_existencias:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     
 class ClienteForm(Form):
     id = IntegerField('id_cliente')
-    Nombre = StringField('Nombre:')
-    ApellidoP = StringField('ApellidoP:')
-    ApellidoM = StringField('ApellidoM:')
+    Nombre = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    ApellidoP = StringField('ApellidoP:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    ApellidoM = StringField('ApellidoM:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     Numero_cliente = StringField('Numero_cliente:')
-    Fecha_nacimiento = StringField('Fecha_nacimiento:')
-    Calle = StringField('Calle:')
-    NumeroCasa = IntegerField('NumeroCasa:')
-    Colonia = StringField('Colonia:')
-    Codigo_postal = IntegerField('Codigo_postal:')
-    Correo_electronico = StringField('Correo_electronico')
-    Contraseña = StringField('Contraseña')
-    Telefono = StringField('Telefono')
+    Fecha_nacimiento = StringField('Fecha_nacimiento:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Calle = StringField('Calle:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    NumeroCasa = IntegerField('NumeroCasa:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Colonia = StringField('Colonia:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Codigo_postal = IntegerField('Codigo_postal:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Correo_electronico = StringField('Correo_electronico',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Contraseña = StringField('Contraseña',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    Telefono = StringField('Telefono',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     
 class CompraForm (Form):
     id = IntegerField('id')
-    fecha_compra = DateField('fecha_compra:')
-    folio =IntegerField('folio')
+    fecha_compra = DateField('fecha_compra:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    folio =IntegerField('folio',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
     id_Proveedor = SelectField('Proveedor') 
     id_Empleado = IntegerField('Empleado')  
-    cantidad = IntegerField('Cantidad')
-    costo = IntegerField('costo')
+    cantidad = IntegerField('Cantidad:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    costo = IntegerField('costo:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
