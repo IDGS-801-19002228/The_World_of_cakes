@@ -27,6 +27,8 @@ from .models import User, Empleado, Proveedor
 from .forms import ClienteForm, ProductForm, EmpleadoForm, ProveedorForm, RecetarioForm, CompraForm
 from project import forms
 import logging
+import matplotlib.pyplot as plt
+import threading
 
 auth = Blueprint("auth", __name__, url_prefix="/security")
 
@@ -164,6 +166,7 @@ def pedidos():
 @login_required
 @roles_required("admin")
 def finanzas():
+   
     return render_template("finanzas.html")
 
 

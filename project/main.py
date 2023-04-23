@@ -5,11 +5,13 @@ from flask import Blueprint, Flask, render_template
 from flask_security import login_required, current_user, roles_accepted
 
 from flask_security.decorators import roles_required
+from matplotlib import pyplot as plt
+import pymysql
 
 
 from . import db
 
-from .models import Role
+from .models import Product, Role
 
 import logging
 
@@ -32,7 +34,8 @@ def inicio():
 @main.route('/profile')
 @login_required
 def profile():
-    return render_template('profile.html', name=current_user.name)
+    return render_template('profile.html',name=current_user.name)
+
 
 @main.route('/contacto')
 def contacto():

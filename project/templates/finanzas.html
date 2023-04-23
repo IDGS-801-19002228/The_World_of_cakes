@@ -1,6 +1,15 @@
 {% extends "index.html" %}
 {% block content %}
 
-<h2>Aqui se mostrara las graficas correspondientes</h2>
+<div class="">
+    <center>
+      <h1>Gráfica de cantidad de productos por nombre</h1>
+      <img src="{{ url_for('static', filename=imagen1) }}" alt="Gráfica">
+      <h1>Gráfica de cantidad de productos por nombre</h1>
+      <img src="{{ url_for('static', filename=imagen2) }}" alt="Gráfica">
+      <h1>Gráfica de cantidad de productos por nombre</h1>
+      <img src="{{ url_for('static', filename=imagen3) }}" alt="Gráfica">
+    </center>
+</div>
   
 {% endblock %}
