@@ -13,14 +13,6 @@ def my_validate(form, field):
     if len(str(field.data)) == 0:
         raise validators.ValidationError("El campo no tiene datos")
 
-'''class ProductForm(Form):
-    id = IntegerField('id')
-    Nombre = StringField('Nombre:')                       
-    Precio = IntegerField('Precio:')
-    Descripcion = StringField('Descripcion:')
-    Image_url = StringField('Image_url')
-    #submit = SubmitField('Enviar')'''
-
 class ProductForm(Form):
     id = IntegerField('id:')
     Nombre = StringField('Nombre:',[
@@ -46,7 +38,7 @@ class ProductForm(Form):
     ])
     
 class EmpleadoForm(Form):
-    id = IntegerField('id_empleado')
+    id_empleado = IntegerField('id_empleado')
     name = StringField('Nombre:',[
         validators.DataRequired(message='El campo es requerido')
     ])
@@ -83,6 +75,7 @@ class EmpleadoForm(Form):
     TelefonoC = StringField('TelefonoC:',[
         validators.DataRequired(message='El campo es requerido')
     ])
+    estatus = IntegerField('Estatus')
 
 class ProveedorForm(Form):
     id = IntegerField('Proveedor')
@@ -177,10 +170,27 @@ class CompraForm (Form):
         validators.DataRequired(message='El campo es requerido')
     ])
     id_Proveedor = SelectField('Proveedor') 
-    id_Empleado = IntegerField('Empleado')  
+    id_Empleado = SelectField('Empleado')  
     cantidad = IntegerField('Cantidad:',[
         validators.DataRequired(message='El campo es requerido')
     ])
     costo = IntegerField('costo:',[
         validators.DataRequired(message='El campo es requerido')
     ])
+    
+class MateriaPrimaForm (Form):
+    
+    id = IntegerField('id')
+    nombre = StringField('Nombre:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    marca = StringField('Marca:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    cantidad = IntegerField('Cantidad:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    unidad_medida = StringField('Unidad de medida:',[
+        validators.DataRequired(message='El campo es requerido')
+    ])
+    

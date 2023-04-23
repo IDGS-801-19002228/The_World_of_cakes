@@ -1,9 +1,13 @@
 {% extends "index.html" %}
 
 {% block content %}
-<div class="column is-4 is-offset-4">
-    <h3 class="title">Registro</h3>
+<br>
+<br>
+<br>
+<br>
+<div class="column">
     <div class="box">
+        <h3 class="title">Registro</h3>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
             <div class="notification is-danger">
@@ -11,73 +15,52 @@
             </div>
         {% endif %}
         {% endwith %}
-        <form method="POST" action="/security/register">
-            <div class="form-outline form-white mb-4">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="name" placeholder="Nombre" autofocus=""/>
+        <form class="row g-3" method="POST" action="/security/register">
+            
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="name" placeholder="Nombre" autofocus=""/>
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="ApellidoP" placeholder="ApellidoP" autofocus="">
+            
+                <div class="col-md-4">
+                    <input class="form-control " type="text" name="ApellidoP" placeholder="ApellidoP" autofocus="">
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="ApellidoM" placeholder="ApellidoM" autofocus="">
+            
+                <div class="col-md-4">
+                    <input class="form-control" type="text" name="ApellidoM" placeholder="ApellidoM" autofocus="">
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
+            
+                <div class="col-md-6">
                     <input class="form-control form-control-lg" type="text" name="Fecha_nacimiento" placeholder="Fecha_nacimiento" autofocus="">
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="Calle" placeholder="Calle" autofocus="">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="NumeroCasa" placeholder="NumeroCasa" autofocus="">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="Colonia" placeholder="Colonia" autofocus="">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <input class="form-control form-control-lg" type="text" name="Codigo_postal" placeholder="Codigo_postal" autofocus="">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
+            
+                <div class="col-md-6">
                     <input class="form-control form-control-lg" type="text" name="TelefonoC" placeholder="TelefonoC" autofocus="">
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
+            
+                <div class="col-md-4">
+                    <input class="form-control form-control-lg" type="text" name="Calle" placeholder="Calle" autofocus="">
+                </div>
+            
+                <div class="col-md-2">
+                    <input class="form-control form-control-lg" type="text" name="NumeroCasa" placeholder="NumeroCasa" autofocus="">
+                </div>
+            
+                <div class="col-md-4">
+                    <input class="form-control form-control-lg" type="text" name="Colonia" placeholder="Colonia" autofocus="">
+                </div>
+            
+                <div class="col-md-2">
+                    <input class="form-control form-control-lg" type="text" name="Codigo_postal" placeholder="Codigo_postal" autofocus="">
+                </div>
+            
+                <div class="col-md-6">
                     <input class="form-control form-control-lg" type="email" name="email" placeholder="Email" autofocus="">
                 </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
+            
+                <div class="col-md-6">
                     <input class="form-control form-control-lg" type="password" name="password" placeholder="Password">
                 </div>
-            </div>
-
+            
             <button class="button is-block is-info is-large is-fullwidth">Registrar</button>
         </form>
     </div>

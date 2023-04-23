@@ -85,7 +85,7 @@
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <thead class="" style="background-color: #D97B29">
-                                                <tr class="tr-head" >
+                                                <tr class="tr-head" style="font-size: 0.8em;">
                                                     <th>Nombre</th>
                                                     <th>Precio</th>
                                                     <th>Tamaño</th>
@@ -96,9 +96,9 @@
                                                     <th>Modificar</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="table-success">
                                                 {%for prod in productos%}
-                                                <tr>
+                                                <tr style="font-size: 0.8em;">
                                                     <td>{{prod.nombre}}</td>
                                                     <td>{{prod.precio_Venta}}</td>
                                                     <td>{{prod.tamanio}}</td>

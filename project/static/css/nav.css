@@ -53,11 +53,17 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #0000;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.01px;
     font-weight: 600;
     transition: 0.7s;
-    font-size: 0.6em;
+    font-size: 0.7em;
+    /*border: 1px solid grey;*/
 }
+
+/*header ul li a:hover {
+    background-color: #8f7193;
+    
+}*/
 
 header.abajo .logo,
 header.abajo ul li a {

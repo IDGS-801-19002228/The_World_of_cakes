@@ -16,59 +16,44 @@
     <div class="col-sm-12">
         <div class="card mt-2">
             <div class="card-header" style="background-color: #3081B5; color: #fff">
-                 <font face="Cavolini" size="4">Proveedores</font> 
+                 <font face="Cavolini" size="3">Proveedores</font> 
             </div>
             <div class="card-body" style="background-color:  #D9D9D9">
                 <div class="row">
                     <div id="" class="col-sm-12">
                         <div class="card">
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
-                                <font face="Cavolini" size="4">Detalles</font> 
+                                <font face="Cavolini" size="3">Detalles</font> 
                                 <div class="form-inline float-right">
                                     
                                 </div>
                             </div>
-                            <form name="sent" class="card-body" action="/security/modificar_proveedor_admin" id="form1" method="POST">
-                                <div class="form-control">
-                                    <div class="form">
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                            <form name="sent" class="card-body row g-3" action="/security/modificar_proveedor_admin" id="form1" method="POST">
+                                        <div class="col-md-4">
                                             {{render_field(form.id,class='form-control',placeholder='Ingresa el nombre')}}
                                         </div>
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.nombre,class='form-control',placeholder='Ingresa el nombre')}}
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.rfc,class='form-control',placeholder='Ingresa el precio')}}
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.telefono,class='form-control',placeholder='Ingresa la descripcion')}}
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.domicilio,class='form-control',placeholder='Ingresa la url')}}
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.razon_social,class='form-control',placeholder='Ingresa la url')}}
-                                        </div>
-                                    </div>                        
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        </div>     
+                                        <div class="col-md-4">
                                             {{render_field(form.descripcion,class='form-control',placeholder='Ingresa la url')}}
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-group col-xs-12 float-label-form-group controls">
+                                        <div class="col-md-4">
                                             {{render_field(form.estatus,class='form-control',placeholder='Ingresa la url')}}
                                         </div>
-                                    </div>
+                                    <br>
                                     <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Guardar"/>
                                 </div>
                                 </div>

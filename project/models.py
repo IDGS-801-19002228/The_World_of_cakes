@@ -39,32 +39,6 @@ class Role(RoleMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     description =  db.Column(db.String(255))
-
-users_roles_admin = db.Table('users_roles_admin',
-    db.Column('adminId', db.Integer, db.ForeignKey('admin.id')),
-    db.Column('roleId', db.Integer, db.ForeignKey('role_admin.id')))
-
-class Admin(db.Model, UserMixin):
-    """User account model"""
-    
-    __tablename__ = 'admin'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), nullable=False)
-    email = db.Column(db.String(255))
-    password = db.Column(db.String(255), nullable=False)
-    active = db.Column(db.Boolean)
-    roles = db.relationship('Role_admin',
-        secondary=users_roles_admin,
-        backref= db.backref('admins', lazy='dynamic'))
-
-
-class Role_admin(RoleMixin, db.Model):
-    """Role model"""
-
-    __tablename__ = 'role_admin'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), nullable=False)
-    description =  db.Column(db.String(255))
     
 class Product(db.Model, UserMixin):
     """Producto account model"""
@@ -82,7 +56,7 @@ class Empleado(db.Model, UserMixin):
     """Employe account model"""
     
     __tablename__ = 'empleado'
-    id_empleado = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     ApellidoP = db.Column(db.String(255))
     ApellidoM = db.Column(db.String(255))
@@ -118,7 +92,7 @@ class Merma (db.Model, UserMixin):
     nombre_producto = db.Column(db.String(255))
     cantidad_unidad = db.Column(db.String(255))
     precio_venta = db.Column(db.String(100))
-    id_empleado = db.Column(db.Integer,db.ForeignKey('empleado.id_empleado'))
+    id_empleado = db.Column(db.Integer,db.ForeignKey('empleado.id'))
     
 
 class Recetario(db.Model, UserMixin):
@@ -149,7 +123,7 @@ class CompraMateriaPrima (db.Model,UserMixin):
     fecha_Compra = db.Column(db.DateTime, default = datetime.datetime.now) #crear un campo para registar la fecha y la hora actual 
     folio = db.Column(db.Integer)
     id_proveedor = db.Column(db.Integer,db.ForeignKey('proveedor.id'))
-    id_Empleado =  db.Column(db.Integer,db.ForeignKey('empleado.id_empleado'))
+    id_Empleado =  db.Column(db.Integer,db.ForeignKey('empleado.id'))
 
 class MateriaPrima (db.Model, UserMixin):
     _tablename_ = 'materia_prima' #mapear la tabla 

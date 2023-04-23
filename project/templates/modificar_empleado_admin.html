@@ -33,6 +33,11 @@
                                         <div class="form">
                                             <div class="form-group">
                                                 <div class="form-group col-xs-12 float-label-form-group controls">
+                                                    {{render_field(form.id_empleado,class='form-control',placeholder='Ingresa el nombre')}}
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-group col-xs-12 float-label-form-group controls">
                                                     {{render_field(form.name,class='form-control',placeholder='Ingresa el nombre')}}
                                                 </div>
                                             </div>
@@ -44,6 +49,11 @@
                                             <div class="form-group">
                                                 <div class="form-group col-xs-12 float-label-form-group controls">
                                                     {{render_field(form.ApellidoM,class='form-control',placeholder='Ingresa la descripcion')}}
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-group col-xs-12 float-label-form-group controls">
+                                                    {{render_field(form.Numero_empleado,class='form-control',placeholder='Ingresa el nombre')}}
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -86,7 +96,12 @@
                                                     {{render_field(form.TelefonoC,class='form-control',placeholder='Ingresa la url')}}
                                                 </div>
                                             </div>
-                                            <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Registrar"/>
+                                            <div class="form-group">
+                                                <div class="form-group col-xs-12 float-label-form-group controls">
+                                                    {{render_field(form.estatus,class='form-control',placeholder='Ingresa el nombre')}}
+                                                </div>
+                                            </div>
+                                            <input type="submit" id="reg-alum" class="btn btn-success" name="registra" value="Registrar"/>
                                         </div>
                                     </div>
                                 </form>   

@@ -182,8 +182,10 @@ def clientes_admin():
 @login_required
 @roles_required("admin")
 def empleados():
+    
     create_form = forms.EmpleadoForm(request.form)
     if request.method == 'POST':
+        app = Flask(__name__)
         emple = Empleado(name=create_form.name.data,
                          ApellidoP=create_form.ApellidoP.data,
                          ApellidoM=create_form.ApellidoM.data,
@@ -197,7 +199,9 @@ def empleados():
                          password=create_form.password.data,
                          TelefonoC=create_form.TelefonoC.data,
                          estatus=1)
-
+        
+        app.logger.debug('Se registro un empleado con el nombre: {}'.format(emple.name))
+        
         userDataStore.create_user(
             name=create_form.name.data,
             email=create_form.email.data,
@@ -215,9 +219,11 @@ def empleados():
 
         db.session.add(emple)
         db.session.commit()
-
+        
         flash('El empleado se registro correctamente')
+        
         return redirect(url_for('auth.empleados'))
+    
     empleados = Empleado.query.all()
     return render_template("empleados.html", form=create_form, empleados=empleados)
 
@@ -228,14 +234,17 @@ def empleados():
 def modificar_empleado_admin():
     create_form2 = forms.EmpleadoForm(request.form)
     if request.method == 'GET':
-        id = request.args.get('id')
+        id_empleado = request.args.get('id_empleado')
         # Select * from alumnos where id==id
         prod1 = db.session.query(User).filter(
-            User.id == id).first()
-        create_form2.id.data = id
+            User.id_empleado == id_empleado).first()
+        
+        create_form2.id_empleado.data = id_empleado
+        
         create_form2.name.data = prod1.name
         create_form2.ApellidoP.data = prod1.ApellidoP
         create_form2.ApellidoM.data = prod1.ApellidoM
+        create_form2.Numero_empleado.data = prod1.Numero_empleado
         create_form2.Fecha_nacimiento.data = prod1.Fecha_nacimiento
         create_form2.Calle.data = prod1.Calle
         create_form2.NumeroCasa.data = prod1.NumeroCasa
@@ -243,6 +252,7 @@ def modificar_empleado_admin():
         create_form2.Codigo_postal.data = prod1.Codigo_postal
         create_form2.email.data = prod1.email
         create_form2.TelefonoC.data = prod1.TelefonoC
+        create_form2.estatus.data = prod1.estatus
 
     if request.method == 'POST':
         # Select * from productos where id==id
@@ -259,7 +269,7 @@ def modificar_empleado_admin():
         prod2.Colonia = create_form2.Colonia.data,
         prod2.Codigo_postal = create_form2.Codigo_postal.data,
         prod2.email = create_form2.email.data,
-        prod2.TelefonoC = create_form2.TelefonoC.data,
+        prod2.TelefonoC = create_form2.TelefonoC.data
 
         db.session.add(prod2)
         db.session.commit()
@@ -493,25 +503,55 @@ def registroRecetario_admin():
     recetas = Recetario.query.all()
     return render_template('registroRecetario_admin.html', form=create_form, recetas=recetas)
 
+@auth.route("/compraMateria2", methods=['GET', 'POST'])
+@login_required
+@roles_required("admin")
+def compraM_2():
+    create_form = forms.CompraForm(request.form)
+    create_form2 = forms.MateriaPrimaForm(request.form)
+    materiaPrima = MateriaPrima.query.all()
+    proveedor = Proveedor.query.all()
+    detalle_materia = DetalleCompraMateria.query.all()
+    empleado = Empleado.query.all()
+    if request.method == 'POST':
+
+        # Realizar el insert en la bd
+        materiaPrima = MateriaPrima(
+            nombre = create_form2.nombre.data,
+            marca = create_form2.marca.data,
+            cantidad = create_form2.cantidad.data,
+            unidad_medida = create_form2.unidad_medida.data
+        )
+        db.session.add(materiaPrima)
+        db.session.commit()
+
+        flash('la Materia se agrego correctamente')
+        #return redirect(url_for('auth.insertarMateria'))
+       # return redirect(url_for('emple.administracion'))
+    return render_template('insertarMateria.html', form=create_form, form2=create_form2, materiaPrima=materiaPrima,
+                           empleado=empleado, proveedor=proveedor, detalle_materia=detalle_materia)
+
 
 @auth.route("/compraMateria", methods=['GET', 'POST'])
 @login_required
 @roles_required("admin")
 def compraM():
     create_form = forms.CompraForm(request.form)
-
-    # select * from proveedor
+    create_form2 = forms.MateriaPrimaForm(request.form)
     proveedor = Proveedor.query.all()
     materiaP = MateriaPrima.query.all()
     detalle_materia = DetalleCompraMateria.query.all()
+    empleado = Empleado.query.all()
     print(proveedor)
+    print(empleado)
     if request.method == 'POST':
-
+        
+        # Realizar el insert en la bd
         compra = CompraMateriaPrima(
             fecha_Compra=create_form.fecha_compra.data,
             folio=create_form.folio.data,
             id_proveedor=request.form['idProveedor'],
-            id_Empleado=create_form.id.data
+            id_Empleado=request.form['id']
         )
        # Realizar el insert en la bd
         db.session.add(compra)
@@ -531,7 +571,8 @@ def compraM():
 
         flash('la Materia se agrego correctamente')
        # return redirect(url_for('emple.administracion'))
-    return render_template('insertarMateria.html', form=create_form, proveedor=proveedor, materiaP=materiaP, detalle_materia=detalle_materia)
+    return render_template('insertarMateria.html', form2=create_form2, form=create_form, empleado=empleado, 
+                           proveedor=proveedor, materiaP=materiaP, detalle_materia=detalle_materia)
 
 
 @auth.route("/logout")

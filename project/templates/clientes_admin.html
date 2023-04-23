@@ -26,7 +26,7 @@
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <thead class="" style="background-color: #D97B29">
-                                                <tr class="tr-head" >
+                                                <tr class="tr-head" style="font-size: 0.8em;">
                                                     <th>Nombre</th>
                                                     <th>A Paterno</th>
                                                     <th>A Materno</th>
@@ -43,9 +43,9 @@
                                                     <th>Modificar</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody class="table-success">
                                                 {%for usuarios in usuarios%}
-                                                <tr>
+                                                <tr style="font-size: 0.8em;">
                                                     <td>{{usuarios.name}}</td>
                                                     <td>{{usuarios.ApellidoP}}</td>
                                                     <td>{{usuarios.ApellidoM}}</td>
