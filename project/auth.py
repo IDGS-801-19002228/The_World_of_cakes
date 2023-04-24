@@ -154,7 +154,7 @@ def productos():
     return render_template("productos.html", productos=productos)
 
 # Seccion Administrador
-
+# --------------------------------------------------------------------------
 
 @auth.route("/pedidos", methods=["GET"])
 def pedidos():
@@ -177,6 +177,8 @@ def clientes_admin():
     usuarios = User.query.all()
     return render_template("clientes_admin.html", usuarios=usuarios)
 
+# --------------------------------------------------------------------------------
+# CRUD EMPLEADO CON SESION ADMINISTRADOR
 
 @auth.route("/empleados", methods=["GET", "POST"])
 @login_required
@@ -278,6 +280,8 @@ def modificar_empleado_admin():
     empleados = Empleado.query.all()
     return render_template("modificar_empleado_admin.html", form=create_form2, empleados=empleados)
 
+# --------------------------------------------------------------------------------
+# CRUD PRODUCTOS CON SESION ADMINISTRADOR
 
 @auth.route("/administracion_admin", methods=["GET", "POST"])
 @login_required
@@ -342,37 +346,45 @@ def modificar_administracion_admin():
     return render_template('modificar_administracion_admin.html', form=create_form2)
 
 
-@auth.route("/eliminar", methods=['GET', 'POST'])
+@auth.route("/eliminar_administracion_admin", methods=['GET', 'POST'])
 @login_required
 @roles_required("admin")
-def eliminar():
+def eliminar_administracion_admin():
     create_form3 = forms.ProductForm(request.form)
     if request.method == 'GET':
         id = request.args.get('id')
         # Select * from productos where id==id
         prod1 = db.session.query(Product).filter(Product.id == id).first()
+        
         create_form3.id.data = id
-        create_form3.Nombre.data = prod1.nombre
-        create_form3.Precio.data = prod1.precio
-        create_form3.Descripcion.data = prod1.descripcion
-        create_form3.Image_url.data = prod1.image_url
+        create_form3.Nombre.data = prod1.Nombre
+        create_form3.Precio_Venta.data = prod1.Precio_Venta
+        create_form3.Tamanio.data = prod1.Tamanio
+        create_form3.Peso.data = prod1.Peso
+        create_form3.Descripcion.data = prod1.Descripcion
+        create_form3.Numero_Existencias.data = prod1.Numero_Existencias
+        create_form3.Image_url.data = prod1.Image_url
 
     if request.method == 'POST':
         id = create_form3.id.data
         prod2 = db.session.query(Product).filter(Product.id == id).first()
-        prod2.nombre = create_form3.Nombre.data
-        prod2.precio = create_form3.Precio.data
-        prod2.descripcion = create_form3.Descripcion.data
-        prod2.image_url = create_form3.Image_url.data
+        
+        prod2.Nombre = create_form3.Nombre.data,
+        prod2.Precio_Venta = create_form3.Precio_Venta.data,
+        prod2.Tamanio = create_form3.Tamanio.data,
+        prod2.Peso = create_form3.Peso.data,
+        prod2.Descripcion = create_form3.Descripcion.data,
+        prod2.Numero_Existencias = create_form3.Numero_Existencias.data,
+        prod2.Image_url = create_form3.Image_url.data
+        
         db.session.delete(prod2)
         db.session.commit()
         flash('El producto se elimino correctamente')
-        return redirect(url_for('auth.administracion'))
-    return render_template('eliminar.html', form=create_form3)
+        return redirect(url_for('auth.administracion_admin'))
+    return render_template('eliminar_administracion_admin.html', form=create_form3)
 
 # --------------------------------------------------------------------------------
-# INSERT PROVEEDOR CON SESION ADMINISTRADOR
-
+# CRUD PROVEEDOR CON SESION ADMINISTRADOR
 
 @auth.route("/proveedor_admin", methods=["GET", "POST"])
 @login_required
@@ -435,29 +447,8 @@ def modificar_proveedor_admin():
     return render_template('modificar_proveedor_admin.html', form=create_form2)
 
 
-'''@auth.route("/cliente_admin", methods=["GET","POST"])
-@login_required
-@roles_required("admin")
-def insert_cliente():
-    create_form = forms.ClienteForm(request.form)
-    if request.method == 'POST':
-        clie= Cliente(rfc = create_form.rfc.data,
-                       domicilio = create_form.domicilio.data,
-                       razon_social = create_form.razon_social.data,
-                       nombre = create_form.nombre.data,
-                       telefono = create_form.telefono.data,
-                       descripcion = create_form.descripcion.data,
-                       estatus=1)
-        
-        db.session.add(clie)
-        db.session.commit()
-        
-        flash('El producto se registro correctamente')
-        return redirect(url_for('auth.cliente_admin'))
-    clientes=Cliente.query.all() 
-    
-    return render_template("cliente_admin.html", form=create_form,clientes=clientes)'''
-
+# --------------------------------------------------------------------------------
+# CRUD MERMA CON SESION ADMINISTRADOR
 
 @auth.route("/merma_admin", methods=['GET', 'POST'])
 def insertarMerma():
@@ -483,6 +474,9 @@ def insertarMerma():
     return render_template('merma_admin.html', form=create_form, mermas=mermas)
 
 
+# --------------------------------------------------------------------------------
+# CRUD RECCETARIO CON SESION ADMINISTRADOR
+
 @auth.route("/registroRecetario_admin", methods=['GET', 'POST'])
 @login_required
 @roles_required("admin")
@@ -502,6 +496,9 @@ def registroRecetario_admin():
 
     recetas = Recetario.query.all()
     return render_template('registroRecetario_admin.html', form=create_form, recetas=recetas)
+
+# --------------------------------------------------------------------------------
+# CRUD MATERIA PRIMA CON SESION ADMINISTRADOR
 
 @auth.route("/compraMateria2", methods=['GET', 'POST'])
 @login_required
@@ -542,6 +539,7 @@ def compraM():
     materiaP = MateriaPrima.query.all()
     detalle_materia = DetalleCompraMateria.query.all()
     empleado = Empleado.query.all()
+    compra = CompraMateriaPrima.query.all()
     print(proveedor)
     print(empleado)
     if request.method == 'POST':
@@ -549,7 +547,7 @@ def compraM():
         # Realizar el insert en la bd
         compra = CompraMateriaPrima(
             fecha_Compra=create_form.fecha_compra.data,
-            folio=create_form.folio.data,
+            folio=str(random.randint(0, 9999999)).zfill(7),
             id_proveedor=request.form['idProveedor'],
             id_Empleado=request.form['id']
         )
@@ -572,7 +570,7 @@ def compraM():
         flash('la Materia se agrego correctamente')
        # return redirect(url_for('emple.administracion'))
     return render_template('insertarMateria.html', form2=create_form2, form=create_form, empleado=empleado, 
-                           proveedor=proveedor, materiaP=materiaP, detalle_materia=detalle_materia)
+                           proveedor=proveedor, materiaP=materiaP, detalle_materia=detalle_materia, compra=compra)
 
 
 @auth.route("/logout")
@@ -582,7 +580,8 @@ def logout():
     return redirect(url_for("main.principal"))
 
 # SECCION DE SESION CON EMPLEADO
-
+# --------------------------------------------------------------------------------
+# CRUD PRODUCTO CON SESION EMPLEADO
 
 @auth.route("/administracion_empleado", methods=["GET", "POST"])
 @login_required

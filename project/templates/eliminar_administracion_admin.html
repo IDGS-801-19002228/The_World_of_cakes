@@ -24,7 +24,7 @@
                             <div class="card-header" style="background-color: #3081B5; color: #fff">
                                 <font face="Cavolini" size="3">Detalles</font> 
                             </div>
-                            <form name="sent" class="card-body row g-3" action="/security/modificar_administracion_admin" id="form1" method="POST">
+                            <form name="sent" class="card-body row g-3" action="/security/eliminar_administracion_admin" id="form1" method="POST">
                                             <div class="col-md-4">
                                                 {{render_field(form.id,class='form-control',placeholder='id')}}
                                             </div>
@@ -49,8 +49,8 @@
                                             <div class="col-md-4">
                                                 {{render_field(form.Image_url,class='form-control',placeholder='Ingresa la url')}}
                                             </div>
-                                        <input type="submit" id="reg-alum" class="btn btn-success" name="registra" value="Guardar"/>
-                                        <a class="btn btn-info" href="{{ url_for('auth.administracion_admin') }}" role="button">Cancelar</a>
+                                            <input type="submit" id="reg-alum" class="btn btn-danger" name="registra" value="Eliminar"/>
+                                            <a class="btn btn-info" href="{{ url_for('auth.administracion_admin') }}" role="button">Cancelar</a>
                                     </div>
                                 </div>
                             </form>

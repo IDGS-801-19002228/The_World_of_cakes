@@ -121,7 +121,7 @@ class CompraMateriaPrima (db.Model,UserMixin):
     #especificar el tipo de dato atributos de tal tabla
     id = db.Column(db.Integer,primary_key = True)  
     fecha_Compra = db.Column(db.DateTime, default = datetime.datetime.now) #crear un campo para registar la fecha y la hora actual 
-    folio = db.Column(db.Integer)
+    folio = db.Column(db.String(255))
     id_proveedor = db.Column(db.Integer,db.ForeignKey('proveedor.id'))
     id_Empleado =  db.Column(db.Integer,db.ForeignKey('empleado.id'))
 

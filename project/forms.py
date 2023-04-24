@@ -166,7 +166,7 @@ class CompraForm (Form):
     fecha_compra = DateField('fecha_compra:',[
         validators.DataRequired(message='El campo es requerido')
     ])
-    folio =IntegerField('folio',[
+    folio =StringField('Folio',[
         validators.DataRequired(message='El campo es requerido')
     ])
     id_Proveedor = SelectField('Proveedor') 

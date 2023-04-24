@@ -62,9 +62,6 @@
                                     {{render_field(form.fecha_compra,class='form-control')}}
                                 </div>
                                     
-                                <div class="col-md-12">
-                                    {{render_field(form.folio,class='form-control',placeholder='Ingresa el precio')}}
-                                </div>
 
                                 <div class="col-md-12">
                                     <font face="Cavolini" size="2">Proveedor</font> 
@@ -128,15 +125,14 @@
                                             </thead>
                                             <tbody class="table-success">
                                                 {% for mp in materiaP %}
-                                                <tr style="font-size: 0.8em;">
-                                                    <td>{{mp.nombre}}</td>
-                                                    <td>{{mp.marca}}</td>
-                                                    <td>{{mp.unidad_medida}}</td>
-                                                    <td>{{mp.cantidad}}</td>
-                                                    <td><button href="eliminar?id={{mp.id}}"  type="button" class="btn btn-danger">Eliminar</button></td>
-                                                    <td><button href="modificar?id={{mp.id}}"  type="button" class="btn btn-warning">Modificar</button></td>
-                                                    
-                                                </tr>
+                                                    <tr style="font-size: 0.8em;">
+                                                        <td>{{mp.nombre}}</td>
+                                                        <td>{{mp.marca}}</td>
+                                                        <td>{{mp.unidad_medida}}</td>
+                                                        <td>{{mp.cantidad}}</td>
+                                                        <td><button href="eliminar?id={{mp.id}}"  type="button" class="btn btn-danger">Eliminar</button></td>
+                                                        <td><button href="modificar?id={{mp.id}}"  type="button" class="btn btn-warning">Modificar</button></td>
+                                                    </tr>
                                                 {%endfor%}
                                             </tbody>
                                         </table>

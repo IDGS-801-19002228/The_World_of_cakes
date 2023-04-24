@@ -2148,3 +2148,1165 @@
 2023-04-23 17:24:47,563:INFO:127.0.0.1 - - [23/Apr/2023 17:24:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
 2023-04-23 17:24:47,577:INFO:127.0.0.1 - - [23/Apr/2023 17:24:47] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
 2023-04-23 17:24:47,604:INFO:127.0.0.1 - - [23/Apr/2023 17:24:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:00,914:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 17:31:01,289:INFO: * Restarting with stat
+2023-04-23 17:31:05,303:INFO:Se inicio la aplicacion
+2023-04-23 17:31:05,317:WARNING: * Debugger is active!
+2023-04-23 17:31:05,328:INFO: * Debugger PIN: 577-661-229
+2023-04-23 17:31:14,174:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 17:31:14,403:INFO: * Restarting with stat
+2023-04-23 17:31:18,354:INFO:Se inicio la aplicacion
+2023-04-23 17:31:18,369:WARNING: * Debugger is active!
+2023-04-23 17:31:18,376:INFO: * Debugger PIN: 577-661-229
+2023-04-23 17:31:26,628:INFO:127.0.0.1 - - [23/Apr/2023 17:31:26] "[32mGET /security/compraMateria HTTP/1.1[0m" 302 -
+2023-04-23 17:31:26,695:INFO:127.0.0.1 - - [23/Apr/2023 17:31:26] "GET /login?next=%2Fsecurity%2FcompraMateria HTTP/1.1" 200 -
+2023-04-23 17:31:31,798:INFO:127.0.0.1 - - [23/Apr/2023 17:31:31] "GET / HTTP/1.1" 200 -
+2023-04-23 17:31:31,914:INFO:127.0.0.1 - - [23/Apr/2023 17:31:31] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:31,928:INFO:127.0.0.1 - - [23/Apr/2023 17:31:31] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:31,948:INFO:127.0.0.1 - - [23/Apr/2023 17:31:31] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:31,996:INFO:127.0.0.1 - - [23/Apr/2023 17:31:31] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,010:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,016:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,099:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,113:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,146:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:32,163:INFO:127.0.0.1 - - [23/Apr/2023 17:31:32] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,018:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 17:31:35,128:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,142:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:35,161:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:35,183:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,202:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,207:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,227:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:35,267:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:35,275:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:35,299:INFO:127.0.0.1 - - [23/Apr/2023 17:31:35] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:42,729:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 17:31:42,731:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 17:31:42,744:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "GET / HTTP/1.1" 200 -
+2023-04-23 17:31:42,831:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:42,840:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:42,850:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:42,884:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:42,913:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:42,916:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:31:42,996:INFO:127.0.0.1 - - [23/Apr/2023 17:31:42] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:43,006:INFO:127.0.0.1 - - [23/Apr/2023 17:31:43] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:43,011:INFO:127.0.0.1 - - [23/Apr/2023 17:31:43] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:43,022:INFO:127.0.0.1 - - [23/Apr/2023 17:31:43] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:44,991:INFO:127.0.0.1 - - [23/Apr/2023 17:31:44] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:31:45,105:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,106:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,108:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,126:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,129:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,151:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,158:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,175:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,190:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,248:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,253:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,275:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:31:45,275:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:31:45,296:INFO:127.0.0.1 - - [23/Apr/2023 17:31:45] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,364:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:32:02,443:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:02,522:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,523:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,550:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:02,556:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:02,563:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:32:02,590:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,604:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,624:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,672:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,697:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:02,721:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:32:02,725:INFO:127.0.0.1 - - [23/Apr/2023 17:32:02] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,698:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:32:14,770:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,805:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,822:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,840:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,849:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,869:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,876:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,907:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,912:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,948:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:32:14,969:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:14,982:INFO:127.0.0.1 - - [23/Apr/2023 17:32:14] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:32:15,009:INFO:127.0.0.1 - - [23/Apr/2023 17:32:15] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:09,308:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 17:33:09,758:INFO: * Restarting with stat
+2023-04-23 17:33:13,262:INFO:Se inicio la aplicacion
+2023-04-23 17:33:13,278:WARNING: * Debugger is active!
+2023-04-23 17:33:13,288:INFO: * Debugger PIN: 577-661-229
+2023-04-23 17:33:13,455:INFO:127.0.0.1 - - [23/Apr/2023 17:33:13] "[32mGET /security/compraMateria HTTP/1.1[0m" 302 -
+2023-04-23 17:33:13,512:INFO:127.0.0.1 - - [23/Apr/2023 17:33:13] "GET /login?next=%2Fsecurity%2FcompraMateria HTTP/1.1" 200 -
+2023-04-23 17:33:18,333:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "GET / HTTP/1.1" 200 -
+2023-04-23 17:33:18,438:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,464:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:18,472:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:18,483:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,490:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,493:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,544:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,556:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,566:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:18,593:INFO:127.0.0.1 - - [23/Apr/2023 17:33:18] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,195:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 17:33:22,268:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,275:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:22,283:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:22,306:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,324:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,326:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,340:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:22,396:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:22,407:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:22,413:INFO:127.0.0.1 - - [23/Apr/2023 17:33:22] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,563:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 17:33:28,565:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 17:33:28,586:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "GET / HTTP/1.1" 200 -
+2023-04-23 17:33:28,688:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,710:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:28,738:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:28,754:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,772:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,784:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,844:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,856:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,879:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:28,880:INFO:127.0.0.1 - - [23/Apr/2023 17:33:28] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,545:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:33:30,672:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,687:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,705:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,723:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,746:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,751:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,756:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,771:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,792:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,857:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,858:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,858:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:33:30,874:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:33:30,897:INFO:127.0.0.1 - - [23/Apr/2023 17:33:30] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,246:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:34:50,356:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,381:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,385:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,404:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,428:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,429:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,439:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,445:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,477:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,506:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,524:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,530:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:34:50,553:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:34:50,591:INFO:127.0.0.1 - - [23/Apr/2023 17:34:50] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,241:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:35:21,309:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,361:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,361:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,375:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,388:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,397:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,420:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,428:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,437:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,480:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,502:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,514:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:35:21,520:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:35:21,547:INFO:127.0.0.1 - - [23/Apr/2023 17:35:21] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:43,797:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:35:43,868:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:43,922:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:43,924:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:43,941:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:43,962:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:35:43,965:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:35:43,987:INFO:127.0.0.1 - - [23/Apr/2023 17:35:43] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:44,005:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:35:44,022:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:44,111:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:35:44,119:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:35:44,130:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:35:44,174:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:35:44,212:INFO:127.0.0.1 - - [23/Apr/2023 17:35:44] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:36:50,806:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:36:50,889:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:36:50,955:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:36:50,979:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:36:50,987:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:36:50,988:INFO:127.0.0.1 - - [23/Apr/2023 17:36:50] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:36:51,000:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:36:51,041:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:36:51,071:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:36:51,087:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:36:51,124:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:36:51,160:INFO:127.0.0.1 - - [23/Apr/2023 17:36:51] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:37:14,904:INFO:127.0.0.1 - - [23/Apr/2023 17:37:14] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:37:14,973:INFO:127.0.0.1 - - [23/Apr/2023 17:37:14] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,026:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,037:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,073:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,078:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,085:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,104:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,105:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,120:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,191:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,191:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,205:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:37:15,236:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:37:15,261:INFO:127.0.0.1 - - [23/Apr/2023 17:37:15] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,513:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:42:06,588:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:06,631:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,636:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,653:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:06,669:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:06,683:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:42:06,709:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,725:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,744:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,804:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:42:06,818:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,833:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,869:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:06,870:INFO:127.0.0.1 - - [23/Apr/2023 17:42:06] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,141:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:42:25,197:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,252:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,262:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,275:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,298:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,302:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,314:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,325:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,338:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,413:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,426:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:42:25,436:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,449:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:42:25,467:INFO:127.0.0.1 - - [23/Apr/2023 17:42:25] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:43:08,233:INFO:127.0.0.1 - - [23/Apr/2023 17:43:08] "[35m[1mGET /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 17:43:08,273:INFO:127.0.0.1 - - [23/Apr/2023 17:43:08] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 17:43:08,280:INFO:127.0.0.1 - - [23/Apr/2023 17:43:08] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 17:43:08,301:INFO:127.0.0.1 - - [23/Apr/2023 17:43:08] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 17:43:17,582:INFO:127.0.0.1 - - [23/Apr/2023 17:43:17] "[35m[1mGET /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 17:43:17,618:INFO:127.0.0.1 - - [23/Apr/2023 17:43:17] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 17:43:17,622:INFO:127.0.0.1 - - [23/Apr/2023 17:43:17] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 17:43:17,660:INFO:127.0.0.1 - - [23/Apr/2023 17:43:17] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 17:48:25,771:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:48:25,835:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:48:25,881:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:48:25,900:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:48:25,948:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:48:25,962:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:48:25,975:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:48:25,976:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:48:25,991:INFO:127.0.0.1 - - [23/Apr/2023 17:48:25] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:48:26,011:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:48:26,069:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:48:26,077:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:48:26,095:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:48:26,098:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:48:26,155:INFO:127.0.0.1 - - [23/Apr/2023 17:48:26] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,496:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:49:16,570:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,626:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,674:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,684:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,693:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,694:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,717:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,724:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,727:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,819:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,840:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,851:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:49:16,877:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:49:16,913:INFO:127.0.0.1 - - [23/Apr/2023 17:49:16] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,553:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:49:36,618:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,658:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,686:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,695:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,699:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,715:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,726:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,739:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,787:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,819:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,843:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:49:36,861:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,869:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:49:36,907:INFO:127.0.0.1 - - [23/Apr/2023 17:49:36] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,462:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:50:10,509:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:50:10,584:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,594:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,611:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:50:10,622:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:50:10,642:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:50:10,647:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,674:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,684:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,724:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:50:10,736:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:50:10,761:INFO:127.0.0.1 - - [23/Apr/2023 17:50:10] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,667:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:52:23,735:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,769:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,795:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,839:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,851:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,851:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,859:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,865:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,897:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,927:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,941:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,960:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:23,969:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:52:23,993:INFO:127.0.0.1 - - [23/Apr/2023 17:52:23] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:47,694:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:52:47,761:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:47,793:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:47,810:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:47,923:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:47,939:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:47,940:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:47,944:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:52:47,954:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:47,976:INFO:127.0.0.1 - - [23/Apr/2023 17:52:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:48,018:INFO:127.0.0.1 - - [23/Apr/2023 17:52:48] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:52:48,042:INFO:127.0.0.1 - - [23/Apr/2023 17:52:48] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:48,050:INFO:127.0.0.1 - - [23/Apr/2023 17:52:48] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:48,056:INFO:127.0.0.1 - - [23/Apr/2023 17:52:48] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:52:48,078:INFO:127.0.0.1 - - [23/Apr/2023 17:52:48] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:57,974:INFO:127.0.0.1 - - [23/Apr/2023 17:52:57] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:52:58,044:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,089:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,106:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,115:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,125:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,139:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,155:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,161:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,177:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,228:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,229:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,242:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:52:58,248:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:52:58,268:INFO:127.0.0.1 - - [23/Apr/2023 17:52:58] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,438:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:53:54,513:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:53:54,573:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,579:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,616:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:53:54,619:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:53:54,623:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:53:54,632:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,656:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,670:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,714:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:53:54,718:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:53:54,733:INFO:127.0.0.1 - - [23/Apr/2023 17:53:54] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:54:45,699:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:54:45,777:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:54:45,837:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:54:45,863:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:54:45,871:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:54:45,882:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:54:45,896:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:54:45,911:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:54:45,924:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:54:45,994:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:54:45,994:INFO:127.0.0.1 - - [23/Apr/2023 17:54:45] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:54:46,014:INFO:127.0.0.1 - - [23/Apr/2023 17:54:46] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:54:46,022:INFO:127.0.0.1 - - [23/Apr/2023 17:54:46] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:54:46,036:INFO:127.0.0.1 - - [23/Apr/2023 17:54:46] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:54:46,123:INFO:127.0.0.1 - - [23/Apr/2023 17:54:46] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,198:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:55:20,354:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:55:20,365:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,385:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,403:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:55:20,421:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:55:20,428:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:55:20,448:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,467:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,494:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,531:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:55:20,549:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:55:20,567:INFO:127.0.0.1 - - [23/Apr/2023 17:55:20] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:56:42,739:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:56:42,803:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:56:42,868:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:56:42,874:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:56:42,912:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:56:42,914:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:56:42,930:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:56:42,937:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:56:42,963:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:56:42,976:INFO:127.0.0.1 - - [23/Apr/2023 17:56:42] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:56:43,043:INFO:127.0.0.1 - - [23/Apr/2023 17:56:43] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:56:43,048:INFO:127.0.0.1 - - [23/Apr/2023 17:56:43] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:56:43,061:INFO:127.0.0.1 - - [23/Apr/2023 17:56:43] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:56:43,087:INFO:127.0.0.1 - - [23/Apr/2023 17:56:43] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:56:43,100:INFO:127.0.0.1 - - [23/Apr/2023 17:56:43] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,703:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:57:33,767:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 17:57:33,804:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,825:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,837:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 17:57:33,857:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 17:57:33,872:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,873:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 17:57:33,887:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,904:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,955:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,956:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 17:57:33,977:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 17:57:33,984:INFO:127.0.0.1 - - [23/Apr/2023 17:57:33] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 17:57:34,006:INFO:127.0.0.1 - - [23/Apr/2023 17:57:34] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 17:57:59,940:INFO:127.0.0.1 - - [23/Apr/2023 17:57:59] "[35m[1mPOST /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 17:58:00,022:INFO:127.0.0.1 - - [23/Apr/2023 17:58:00] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 17:58:00,042:INFO:127.0.0.1 - - [23/Apr/2023 17:58:00] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 17:58:00,114:INFO:127.0.0.1 - - [23/Apr/2023 17:58:00] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 17:58:10,910:INFO:127.0.0.1 - - [23/Apr/2023 17:58:10] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 17:58:55,423:INFO:127.0.0.1 - - [23/Apr/2023 17:58:55] "[35m[1mGET /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 17:58:55,473:INFO:127.0.0.1 - - [23/Apr/2023 17:58:55] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 17:58:55,485:INFO:127.0.0.1 - - [23/Apr/2023 17:58:55] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 17:58:55,510:INFO:127.0.0.1 - - [23/Apr/2023 17:58:55] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:00:58,957:INFO:127.0.0.1 - - [23/Apr/2023 18:00:58] "[35m[1mGET /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 18:00:59,005:INFO:127.0.0.1 - - [23/Apr/2023 18:00:59] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 18:00:59,025:INFO:127.0.0.1 - - [23/Apr/2023 18:00:59] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 18:00:59,059:INFO:127.0.0.1 - - [23/Apr/2023 18:00:59] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:01:13,267:INFO:127.0.0.1 - - [23/Apr/2023 18:01:13] "[35m[1mGET /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 18:01:13,309:INFO:127.0.0.1 - - [23/Apr/2023 18:01:13] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:13,317:INFO:127.0.0.1 - - [23/Apr/2023 18:01:13] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 18:01:13,360:INFO:127.0.0.1 - - [23/Apr/2023 18:01:13] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,027:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:01:36,101:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,136:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,154:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,189:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,200:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,218:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,231:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,250:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,260:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,319:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:01:36,322:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:36,341:INFO:127.0.0.1 - - [23/Apr/2023 18:01:36] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,456:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:01:47,522:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,556:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,585:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,598:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,615:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,621:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,621:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,635:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,660:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,736:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,741:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,768:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:01:47,771:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:01:47,794:INFO:127.0.0.1 - - [23/Apr/2023 18:01:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:02:18,769:INFO:Se inicio la aplicacion
+2023-04-23 18:02:18,789:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-23 18:02:18,789:INFO:[33mPress CTRL+C to quit[0m
+2023-04-23 18:02:18,791:INFO: * Restarting with stat
+2023-04-23 18:02:22,806:INFO:Se inicio la aplicacion
+2023-04-23 18:02:22,820:WARNING: * Debugger is active!
+2023-04-23 18:02:22,827:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:02:25,615:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "GET / HTTP/1.1" 200 -
+2023-04-23 18:02:25,707:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,716:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:02:25,737:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:02:25,742:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,757:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,768:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,809:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,842:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,843:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:02:25,849:INFO:127.0.0.1 - - [23/Apr/2023 18:02:25] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,678:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "GET /security/register HTTP/1.1" 200 -
+2023-04-23 18:02:43,813:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,818:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:02:43,860:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:02:43,867:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,874:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,884:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,953:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:02:43,969:INFO:127.0.0.1 - - [23/Apr/2023 18:02:43] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,335:DEBUG:Se registro un usuario con el correo: ('FernandoLP.mx@outlook.com',)
+2023-04-23 18:03:08,336:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[32mPOST /security/register HTTP/1.1[0m" 302 -
+2023-04-23 18:03:08,350:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:03:08,450:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,491:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:08,506:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:08,514:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,525:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,528:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:08,531:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,578:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:03:08,583:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:08,593:INFO:127.0.0.1 - - [23/Apr/2023 18:03:08] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:03:21,958:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:03:21,962:INFO:127.0.0.1 - - [23/Apr/2023 18:03:21] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:03:21,977:INFO:127.0.0.1 - - [23/Apr/2023 18:03:21] "GET / HTTP/1.1" 200 -
+2023-04-23 18:03:22,072:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,085:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:22,125:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:22,141:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,165:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,174:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,236:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,265:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,270:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:03:22,296:INFO:127.0.0.1 - - [23/Apr/2023 18:03:22] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,323:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:03:24,433:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,437:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,470:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,502:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,506:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,523:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,526:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,536:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,548:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,596:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,616:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,645:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:03:24,658:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:03:24,758:INFO:127.0.0.1 - - [23/Apr/2023 18:03:24] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:04:34,085:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:04:34,391:INFO: * Restarting with stat
+2023-04-23 18:04:39,183:INFO:Se inicio la aplicacion
+2023-04-23 18:04:39,214:WARNING: * Debugger is active!
+2023-04-23 18:04:39,229:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:05:19,814:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:05:20,067:INFO: * Restarting with stat
+2023-04-23 18:05:25,303:INFO:Se inicio la aplicacion
+2023-04-23 18:05:25,320:WARNING: * Debugger is active!
+2023-04-23 18:05:25,331:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:05:32,387:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:05:32,750:INFO: * Restarting with stat
+2023-04-23 18:05:37,397:INFO:Se inicio la aplicacion
+2023-04-23 18:05:37,411:WARNING: * Debugger is active!
+2023-04-23 18:05:37,417:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:05:53,629:INFO:127.0.0.1 - - [23/Apr/2023 18:05:53] "[32mGET /security/compraMateria HTTP/1.1[0m" 302 -
+2023-04-23 18:05:53,688:INFO:127.0.0.1 - - [23/Apr/2023 18:05:53] "GET /login?next=%2Fsecurity%2FcompraMateria HTTP/1.1" 200 -
+2023-04-23 18:05:58,367:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "GET / HTTP/1.1" 200 -
+2023-04-23 18:05:58,485:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,489:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:05:58,549:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:05:58,561:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,565:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,573:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,623:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,640:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,647:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:05:58,652:INFO:127.0.0.1 - - [23/Apr/2023 18:05:58] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:00,850:INFO:127.0.0.1 - - [23/Apr/2023 18:06:00] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:06:00,985:INFO:127.0.0.1 - - [23/Apr/2023 18:06:00] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:00,996:INFO:127.0.0.1 - - [23/Apr/2023 18:06:00] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:01,052:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:01,062:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:01,073:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:01,077:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:01,080:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:01,151:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:01,161:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:01,203:INFO:127.0.0.1 - - [23/Apr/2023 18:06:01] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:04,775:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:06:04,779:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:06:04,793:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "GET / HTTP/1.1" 200 -
+2023-04-23 18:06:04,881:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:04,902:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:04,903:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:04,915:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:04,927:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:04,935:INFO:127.0.0.1 - - [23/Apr/2023 18:06:04] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:05,030:INFO:127.0.0.1 - - [23/Apr/2023 18:06:05] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:05,048:INFO:127.0.0.1 - - [23/Apr/2023 18:06:05] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:05,051:INFO:127.0.0.1 - - [23/Apr/2023 18:06:05] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:05,064:INFO:127.0.0.1 - - [23/Apr/2023 18:06:05] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:06,720:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:06:06,843:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:06,866:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:06,882:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:06,921:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:06,930:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:06,930:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:06,949:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:06,955:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:06,959:INFO:127.0.0.1 - - [23/Apr/2023 18:06:06] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:07,029:INFO:127.0.0.1 - - [23/Apr/2023 18:06:07] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:07,042:INFO:127.0.0.1 - - [23/Apr/2023 18:06:07] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:07,051:INFO:127.0.0.1 - - [23/Apr/2023 18:06:07] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:07,064:INFO:127.0.0.1 - - [23/Apr/2023 18:06:07] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:07,095:INFO:127.0.0.1 - - [23/Apr/2023 18:06:07] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,345:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "GET /security/empleados HTTP/1.1" 200 -
+2023-04-23 18:06:11,440:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,480:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,493:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,519:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,552:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,557:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,583:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,597:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,604:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,697:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,700:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,715:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:11,739:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:11,805:INFO:127.0.0.1 - - [23/Apr/2023 18:06:11] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:46,961:DEBUG:Se registro un empleado con el nombre: Diana Daniela
+2023-04-23 18:06:46,980:INFO:127.0.0.1 - - [23/Apr/2023 18:06:46] "[32mPOST /security/empleados HTTP/1.1[0m" 302 -
+2023-04-23 18:06:47,000:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "GET /security/empleados HTTP/1.1" 200 -
+2023-04-23 18:06:47,117:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,123:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,138:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,166:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,172:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,182:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,193:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,201:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,216:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,263:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,280:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,290:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:47,299:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:47,330:INFO:127.0.0.1 - - [23/Apr/2023 18:06:47] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,243:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:06:50,334:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,395:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,409:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,436:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,451:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,457:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,465:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,497:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,498:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,565:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,566:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,569:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:50,587:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:50,681:INFO:127.0.0.1 - - [23/Apr/2023 18:06:50] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,188:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "GET /security/proveedor_admin HTTP/1.1" 200 -
+2023-04-23 18:06:53,285:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,332:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,370:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,385:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,389:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,399:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,414:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,432:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,446:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,516:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,518:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,534:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:06:53,568:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:06:53,645:INFO:127.0.0.1 - - [23/Apr/2023 18:06:53] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,614:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[32mPOST /security/proveedor_admin HTTP/1.1[0m" 302 -
+2023-04-23 18:07:15,638:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "GET /security/proveedor_admin HTTP/1.1" 200 -
+2023-04-23 18:07:15,731:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:15,734:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,765:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,780:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:15,797:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:15,801:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:07:15,813:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,821:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,846:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,882:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:07:15,902:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,930:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:07:15,934:INFO:127.0.0.1 - - [23/Apr/2023 18:07:15] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:07:16,012:INFO:127.0.0.1 - - [23/Apr/2023 18:07:16] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,486:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:07:19,586:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,619:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,651:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,675:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,683:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,711:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,712:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,721:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,733:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,794:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,820:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,833:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:19,852:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:07:19,870:INFO:127.0.0.1 - - [23/Apr/2023 18:07:19] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:07:33,072:INFO:127.0.0.1 - - [23/Apr/2023 18:07:33] "[35m[1mPOST /security/compraMateria HTTP/1.1[0m" 500 -
+2023-04-23 18:07:33,160:INFO:127.0.0.1 - - [23/Apr/2023 18:07:33] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 18:07:33,165:INFO:127.0.0.1 - - [23/Apr/2023 18:07:33] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 18:07:33,182:INFO:127.0.0.1 - - [23/Apr/2023 18:07:33] "[36mGET /security/compraMateria?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:08:37,828:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\models.py', reloading
+2023-04-23 18:08:38,087:INFO: * Restarting with stat
+2023-04-23 18:08:41,930:INFO:Se inicio la aplicacion
+2023-04-23 18:08:41,947:WARNING: * Debugger is active!
+2023-04-23 18:08:41,954:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:08:53,308:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\forms.py', reloading
+2023-04-23 18:08:53,564:INFO: * Restarting with stat
+2023-04-23 18:08:57,479:INFO:Se inicio la aplicacion
+2023-04-23 18:08:57,497:WARNING: * Debugger is active!
+2023-04-23 18:08:57,505:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:09:07,100:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:09:07,358:INFO: * Restarting with stat
+2023-04-23 18:09:11,580:INFO:Se inicio la aplicacion
+2023-04-23 18:09:11,597:WARNING: * Debugger is active!
+2023-04-23 18:09:11,603:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:09:29,867:INFO:127.0.0.1 - - [23/Apr/2023 18:09:29] "GET / HTTP/1.1" 200 -
+2023-04-23 18:09:29,957:INFO:127.0.0.1 - - [23/Apr/2023 18:09:29] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,011:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:09:30,016:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:09:30,047:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,063:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,069:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,111:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,117:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,151:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:09:30,174:INFO:127.0.0.1 - - [23/Apr/2023 18:09:30] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,410:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:11:41,534:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,580:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:41,595:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:41,600:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,613:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,623:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,628:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:41,676:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:11:41,697:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:41,764:INFO:127.0.0.1 - - [23/Apr/2023 18:11:41] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,629:WARNING:Acceso fallido
+2023-04-23 18:11:45,631:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:11:45,642:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:11:45,726:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,746:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:45,756:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:45,766:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,777:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,785:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,796:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:45,860:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:45,860:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:11:45,883:INFO:127.0.0.1 - - [23/Apr/2023 18:11:45] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,530:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:11:49,531:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:11:49,546:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "GET / HTTP/1.1" 200 -
+2023-04-23 18:11:49,650:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,661:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:49,664:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:49,696:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,710:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,715:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,776:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,795:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,817:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:11:49,822:INFO:127.0.0.1 - - [23/Apr/2023 18:11:49] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,161:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:11:51,273:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,316:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,318:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,329:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,342:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,374:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,374:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,386:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,450:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,486:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,507:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:11:51,544:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,587:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:11:51,616:INFO:127.0.0.1 - - [23/Apr/2023 18:11:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:03,831:INFO:127.0.0.1 - - [23/Apr/2023 18:12:03] "POST /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:12:03,994:INFO:127.0.0.1 - - [23/Apr/2023 18:12:03] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:03,995:INFO:127.0.0.1 - - [23/Apr/2023 18:12:03] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,011:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,041:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,041:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,061:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,063:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,072:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,092:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,141:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,147:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,157:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:12:04,180:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:12:04,196:INFO:127.0.0.1 - - [23/Apr/2023 18:12:04] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:12:50,428:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:12:50,823:INFO: * Restarting with stat
+2023-04-23 18:12:58,734:INFO:Se inicio la aplicacion
+2023-04-23 18:12:58,761:WARNING: * Debugger is active!
+2023-04-23 18:12:58,781:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:13:16,207:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:13:16,724:INFO: * Restarting with stat
+2023-04-23 18:13:21,121:INFO:Se inicio la aplicacion
+2023-04-23 18:13:21,159:WARNING: * Debugger is active!
+2023-04-23 18:13:21,170:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:14:30,842:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:14:31,077:INFO: * Restarting with stat
+2023-04-23 18:14:35,027:INFO:Se inicio la aplicacion
+2023-04-23 18:14:35,042:WARNING: * Debugger is active!
+2023-04-23 18:14:35,048:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:15:08,217:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:15:08,516:INFO: * Restarting with stat
+2023-04-23 18:15:12,612:INFO:Se inicio la aplicacion
+2023-04-23 18:15:12,630:WARNING: * Debugger is active!
+2023-04-23 18:15:12,643:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:15:12,800:INFO:127.0.0.1 - - [23/Apr/2023 18:15:12] "[32mGET /security/compraMateria HTTP/1.1[0m" 302 -
+2023-04-23 18:15:12,858:INFO:127.0.0.1 - - [23/Apr/2023 18:15:12] "GET /login?next=%2Fsecurity%2FcompraMateria HTTP/1.1" 200 -
+2023-04-23 18:15:18,166:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "GET / HTTP/1.1" 200 -
+2023-04-23 18:15:18,265:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:18,265:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,273:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:18,281:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,304:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,316:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,410:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,421:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,424:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:18,430:INFO:127.0.0.1 - - [23/Apr/2023 18:15:18] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,367:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:15:20,473:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,498:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:20,510:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:20,523:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,539:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,542:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,559:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:20,611:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:20,623:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:20,649:INFO:127.0.0.1 - - [23/Apr/2023 18:15:20] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,256:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:15:25,258:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:15:25,273:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "GET / HTTP/1.1" 200 -
+2023-04-23 18:15:25,364:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,376:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:25,409:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:25,426:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,450:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,450:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,520:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,536:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,540:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:25,543:INFO:127.0.0.1 - - [23/Apr/2023 18:15:25] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,208:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:15:27,315:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,315:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,322:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,339:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,355:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,383:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,386:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,387:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,401:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,479:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,483:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,505:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:15:27,510:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:27,533:INFO:127.0.0.1 - - [23/Apr/2023 18:15:27] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:56,756:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[32mPOST /security/administracion_admin HTTP/1.1[0m" 302 -
+2023-04-23 18:15:56,776:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:15:56,876:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:56,876:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:56,891:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:56,907:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:56,939:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:15:56,956:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:56,960:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:15:56,986:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:15:56,986:INFO:127.0.0.1 - - [23/Apr/2023 18:15:56] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:57,078:INFO:127.0.0.1 - - [23/Apr/2023 18:15:57] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:15:57,082:INFO:127.0.0.1 - - [23/Apr/2023 18:15:57] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:57,097:INFO:127.0.0.1 - - [23/Apr/2023 18:15:57] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:15:57,122:INFO:127.0.0.1 - - [23/Apr/2023 18:15:57] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:15:57,131:INFO:127.0.0.1 - - [23/Apr/2023 18:15:57] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:15:59,027:INFO:127.0.0.1 - - [23/Apr/2023 18:15:59] "[33mGET /security/eliminar_administracion_admin?id=1 HTTP/1.1[0m" 404 -
+2023-04-23 18:16:30,760:INFO:127.0.0.1 - - [23/Apr/2023 18:16:30] "[33mGET /security/eliminar_administracion_admin?id=1 HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,114:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:16:34,199:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,231:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,260:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,272:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,287:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,298:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,315:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,315:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,335:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,368:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,382:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,396:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:16:34,404:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:16:34,442:INFO:127.0.0.1 - - [23/Apr/2023 18:16:34] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:16:36,015:INFO:127.0.0.1 - - [23/Apr/2023 18:16:36] "[35m[1mGET /security/eliminar?id=1 HTTP/1.1[0m" 500 -
+2023-04-23 18:16:36,124:INFO:127.0.0.1 - - [23/Apr/2023 18:16:36] "GET /security/eliminar?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-04-23 18:16:36,125:INFO:127.0.0.1 - - [23/Apr/2023 18:16:36] "GET /security/eliminar?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-04-23 18:16:36,181:INFO:127.0.0.1 - - [23/Apr/2023 18:16:36] "[36mGET /security/eliminar?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:18:34,769:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:18:35,057:INFO: * Restarting with stat
+2023-04-23 18:18:38,874:INFO:Se inicio la aplicacion
+2023-04-23 18:18:38,891:WARNING: * Debugger is active!
+2023-04-23 18:18:38,898:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:19:04,107:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:19:04,845:INFO: * Restarting with stat
+2023-04-23 18:19:09,614:INFO:Se inicio la aplicacion
+2023-04-23 18:19:09,627:WARNING: * Debugger is active!
+2023-04-23 18:19:09,635:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:19:18,727:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:19:18,995:INFO: * Restarting with stat
+2023-04-23 18:19:23,536:INFO:Se inicio la aplicacion
+2023-04-23 18:19:23,549:WARNING: * Debugger is active!
+2023-04-23 18:19:23,555:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:19:23,691:INFO:127.0.0.1 - - [23/Apr/2023 18:19:23] "[32mGET /security/administracion_admin HTTP/1.1[0m" 302 -
+2023-04-23 18:19:23,744:INFO:127.0.0.1 - - [23/Apr/2023 18:19:23] "GET /login?next=%2Fsecurity%2Fadministracion_admin HTTP/1.1" 200 -
+2023-04-23 18:19:27,929:INFO:127.0.0.1 - - [23/Apr/2023 18:19:27] "GET / HTTP/1.1" 200 -
+2023-04-23 18:19:28,036:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:28,037:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,043:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:28,063:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,079:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,091:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,160:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,170:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,177:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:28,220:INFO:127.0.0.1 - - [23/Apr/2023 18:19:28] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:31,997:INFO:127.0.0.1 - - [23/Apr/2023 18:19:31] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:19:32,085:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:32,141:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:32,168:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:32,173:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:32,183:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:32,195:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:19:32,242:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:32,260:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:32,280:INFO:127.0.0.1 - - [23/Apr/2023 18:19:32] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,657:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:19:36,659:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:19:36,674:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "GET / HTTP/1.1" 200 -
+2023-04-23 18:19:36,776:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,793:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:36,795:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:36,812:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,835:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,838:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,922:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,924:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,936:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:36,961:INFO:127.0.0.1 - - [23/Apr/2023 18:19:36] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,620:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:19:39,738:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,750:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,770:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,801:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,803:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,816:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,817:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,833:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,854:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,900:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,913:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,920:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:19:39,945:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:39,973:INFO:127.0.0.1 - - [23/Apr/2023 18:19:39] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:41,001:INFO:127.0.0.1 - - [23/Apr/2023 18:19:41] "[35m[1mGET /security/eliminar_administracion_admin?id=1 HTTP/1.1[0m" 500 -
+2023-04-23 18:19:41,086:INFO:127.0.0.1 - - [23/Apr/2023 18:19:41] "GET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-04-23 18:19:41,093:INFO:127.0.0.1 - - [23/Apr/2023 18:19:41] "GET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-04-23 18:19:41,121:INFO:127.0.0.1 - - [23/Apr/2023 18:19:41] "GET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-04-23 18:19:41,125:INFO:127.0.0.1 - - [23/Apr/2023 18:19:41] "[36mGET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:49,450:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:19:49,776:INFO: * Restarting with stat
+2023-04-23 18:19:54,072:INFO:Se inicio la aplicacion
+2023-04-23 18:19:54,087:WARNING: * Debugger is active!
+2023-04-23 18:19:54,094:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:19:54,257:INFO:127.0.0.1 - - [23/Apr/2023 18:19:54] "[32mGET /security/eliminar_administracion_admin?id=1 HTTP/1.1[0m" 302 -
+2023-04-23 18:19:54,324:INFO:127.0.0.1 - - [23/Apr/2023 18:19:54] "GET /login?next=%2Fsecurity%2Feliminar_administracion_admin%3Fid%3D1 HTTP/1.1" 200 -
+2023-04-23 18:19:59,711:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "GET / HTTP/1.1" 200 -
+2023-04-23 18:19:59,829:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:59,833:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,843:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:19:59,861:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,861:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,865:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,935:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,944:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,954:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:19:59,960:INFO:127.0.0.1 - - [23/Apr/2023 18:19:59] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,586:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:20:03,670:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:03,675:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,728:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:03,737:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,742:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,755:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,759:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:03,824:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:03,826:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:03,855:INFO:127.0.0.1 - - [23/Apr/2023 18:20:03] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,177:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:20:07,179:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:20:07,194:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "GET / HTTP/1.1" 200 -
+2023-04-23 18:20:07,285:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,289:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:07,312:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:07,335:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,344:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,352:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,404:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,426:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,430:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:07,440:INFO:127.0.0.1 - - [23/Apr/2023 18:20:07] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,060:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:20:09,168:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,169:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,169:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,188:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,204:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,221:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,234:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,239:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,257:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,307:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,312:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,335:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:09,353:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:09,384:INFO:127.0.0.1 - - [23/Apr/2023 18:20:09] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:10,853:INFO:127.0.0.1 - - [23/Apr/2023 18:20:10] "GET /security/eliminar_administracion_admin?id=1 HTTP/1.1" 200 -
+2023-04-23 18:20:10,974:INFO:127.0.0.1 - - [23/Apr/2023 18:20:10] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:10,975:INFO:127.0.0.1 - - [23/Apr/2023 18:20:10] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:10,988:INFO:127.0.0.1 - - [23/Apr/2023 18:20:10] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:10,994:INFO:127.0.0.1 - - [23/Apr/2023 18:20:10] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:11,007:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:11,048:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:11,066:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:11,085:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:11,099:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:11,150:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:11,160:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:11,161:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:11,190:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:11,256:INFO:127.0.0.1 - - [23/Apr/2023 18:20:11] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:15,411:INFO:127.0.0.1 - - [23/Apr/2023 18:20:15] "[35m[1mPOST /security/eliminar_administracion_admin HTTP/1.1[0m" 500 -
+2023-04-23 18:20:15,499:INFO:127.0.0.1 - - [23/Apr/2023 18:20:15] "[36mGET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:15,507:INFO:127.0.0.1 - - [23/Apr/2023 18:20:15] "[36mGET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:15,565:INFO:127.0.0.1 - - [23/Apr/2023 18:20:15] "[36mGET /security/eliminar_administracion_admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:39,468:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:20:39,870:INFO: * Restarting with stat
+2023-04-23 18:20:44,472:INFO:Se inicio la aplicacion
+2023-04-23 18:20:44,487:WARNING: * Debugger is active!
+2023-04-23 18:20:44,493:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:20:44,642:INFO:127.0.0.1 - - [23/Apr/2023 18:20:44] "[32mPOST /security/eliminar_administracion_admin HTTP/1.1[0m" 302 -
+2023-04-23 18:20:44,695:INFO:127.0.0.1 - - [23/Apr/2023 18:20:44] "GET /login?next=%2Fsecurity%2Feliminar_administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:20:49,059:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "GET / HTTP/1.1" 200 -
+2023-04-23 18:20:49,169:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,206:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:49,208:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:49,230:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,233:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,241:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,306:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,315:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,341:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:49,347:INFO:127.0.0.1 - - [23/Apr/2023 18:20:49] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,104:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "GET /security/login HTTP/1.1" 200 -
+2023-04-23 18:20:51,184:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,189:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:51,201:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:51,212:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,222:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,241:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,249:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:51,328:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:51,352:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:51,390:INFO:127.0.0.1 - - [23/Apr/2023 18:20:51] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:55,992:DEBUG:El usuario FernandoLP.mx@outlook.com ingreso al sistema
+2023-04-23 18:20:55,994:INFO:127.0.0.1 - - [23/Apr/2023 18:20:55] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+2023-04-23 18:20:56,019:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "GET / HTTP/1.1" 200 -
+2023-04-23 18:20:56,121:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,135:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:56,146:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:56,193:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,217:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,225:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,338:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,340:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/img/mision2.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,392:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/img/vision.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:56,394:INFO:127.0.0.1 - - [23/Apr/2023 18:20:56] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,070:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "GET /security/administracion_admin HTTP/1.1" 200 -
+2023-04-23 18:20:59,171:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,186:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,187:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,202:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,235:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,236:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,241:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,259:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,269:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,322:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,322:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,329:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:20:59,341:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:20:59,361:INFO:127.0.0.1 - - [23/Apr/2023 18:20:59] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:04,975:INFO:127.0.0.1 - - [23/Apr/2023 18:21:04] "GET /security/compraMateria HTTP/1.1" 200 -
+2023-04-23 18:21:05,091:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,103:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,125:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,140:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,141:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,153:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,167:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,191:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,210:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,248:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,252:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,272:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 18:21:05,275:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 18:21:05,320:INFO:127.0.0.1 - - [23/Apr/2023 18:21:05] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:22:06,681:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:22:06,937:INFO: * Restarting with stat
+2023-04-23 18:22:10,707:INFO:Se inicio la aplicacion
+2023-04-23 18:22:10,720:WARNING: * Debugger is active!
+2023-04-23 18:22:10,727:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:22:22,351:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:22:23,413:INFO: * Restarting with stat
+2023-04-23 18:22:28,153:INFO:Se inicio la aplicacion
+2023-04-23 18:22:28,168:WARNING: * Debugger is active!
+2023-04-23 18:22:28,175:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:22:32,871:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:22:33,116:INFO: * Restarting with stat
+2023-04-23 18:22:36,605:INFO:Se inicio la aplicacion
+2023-04-23 18:22:36,620:WARNING: * Debugger is active!
+2023-04-23 18:22:36,627:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:22:50,960:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:22:51,228:INFO: * Restarting with stat
+2023-04-23 18:22:55,554:INFO:Se inicio la aplicacion
+2023-04-23 18:22:55,637:WARNING: * Debugger is active!
+2023-04-23 18:22:55,645:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:23:00,308:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:23:00,700:INFO: * Restarting with stat
+2023-04-23 18:23:05,989:INFO:Se inicio la aplicacion
+2023-04-23 18:23:06,012:WARNING: * Debugger is active!
+2023-04-23 18:23:06,019:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:23:12,022:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:23:12,637:INFO: * Restarting with stat
+2023-04-23 18:23:16,957:INFO:Se inicio la aplicacion
+2023-04-23 18:23:16,975:WARNING: * Debugger is active!
+2023-04-23 18:23:16,983:INFO: * Debugger PIN: 577-661-229
+2023-04-23 18:23:41,682:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 18:23:41,989:INFO: * Restarting with stat
