@@ -3716,3 +3716,11 @@
 2023-04-23 18:46:51,797:INFO:127.0.0.1 - - [23/Apr/2023 18:46:51] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
 2023-04-23 18:46:51,816:INFO:127.0.0.1 - - [23/Apr/2023 18:46:51] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
 2023-04-23 18:46:51,828:INFO:127.0.0.1 - - [23/Apr/2023 18:46:51] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 18:47:17,034:INFO:Se inicio la aplicacion
+2023-04-23 18:47:17,067:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-23 18:47:17,067:INFO:[33mPress CTRL+C to quit[0m
+2023-04-23 18:47:17,071:INFO: * Restarting with stat
+2023-04-23 18:47:21,340:INFO:Se inicio la aplicacion
+2023-04-23 18:47:21,354:WARNING: * Debugger is active!
+2023-04-23 18:47:21,362:INFO: * Debugger PIN: 577-661-229
