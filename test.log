@@ -6333,3 +6333,6 @@
 2023-04-23 23:41:22,204:INFO: * Debugger PIN: 577-661-229
 2023-04-23 23:41:54,671:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
 2023-04-23 23:41:55,042:INFO: * Restarting with stat
+2023-04-23 23:41:58,500:INFO:Se inicio la aplicacion
+2023-04-23 23:41:58,509:WARNING: * Debugger is active!
+2023-04-23 23:41:58,515:INFO: * Debugger PIN: 577-661-229
