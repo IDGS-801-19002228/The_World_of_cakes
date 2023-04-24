@@ -312,6 +312,7 @@ def modificar_empleado_admin():
 def administracion_admin():
     create_form = forms.ProductForm(request.form)
     if request.method == 'POST':
+        app = Flask(__name__)
         prod = Product(Nombre=create_form.Nombre.data,
                        Precio_Venta=create_form.Precio_Venta.data,
                        Tamanio=create_form.Tamanio.data,
@@ -328,7 +329,7 @@ def administracion_admin():
         #    nombre = request.form['nombre'],
         #    cantidad = request.form['cantidad']
         #)
-        
+        app.logger.debug('Se registro un producto con el nombre: {}'.format(prod.Nombre))
         flash('El producto se registro correctamente')
         return redirect(url_for('auth.administracion_admin'))
     productos = Product.query.all()
@@ -422,6 +423,7 @@ def eliminar_administracion_admin():
 def proveedor_admin():
     create_form = forms.ProveedorForm(request.form)
     if request.method == 'POST':
+        app = Flask(__name__)
         prov = Proveedor(rfc=create_form.rfc.data,
                          domicilio=create_form.domicilio.data,
                          razon_social=create_form.razon_social.data,
@@ -432,7 +434,7 @@ def proveedor_admin():
 
         db.session.add(prov)
         db.session.commit()
-
+        app.logger.debug('Se registro un proveedor con el nombre: {}'.format(prov.nombre))
         flash('El producto se registro correctamente')
         return redirect(url_for('auth.proveedor_admin'))
     proveedores = Proveedor.query.all()
@@ -487,7 +489,7 @@ def insertarMerma():
     empleado = Empleado.query.all()
     
     if request.method == 'POST':
-
+        app = Flask(__name__)
         merma = Merma(
             nombre_producto=create_form.nombre_producto.data,
             cantidad_unidad=create_form.cantidad_unidad.data,
@@ -497,7 +499,7 @@ def insertarMerma():
        # Realizar el insert en la bd
         db.session.add(merma)
         db.session.commit()
-
+        app.logger.debug('Se registro una merma con el nombre: {}'.format(merma.nombre))
         flash('La merma se registro correctamente')
         # return redirect(url_for('auth.merma_admin'))
 
@@ -515,6 +517,7 @@ def registroRecetario_admin():
     create_form = forms.RecetarioForm(request.form)
     proveedor = Proveedor.query.all()
     if request.method == 'POST':
+        app = Flask(__name__)
         rece = Recetario(nombre=create_form.nombre.data,
                          descripcion=create_form.descripcion.data,
                          numero_Existencias=create_form.numero_existencias.data
@@ -523,6 +526,7 @@ def registroRecetario_admin():
         db.session.add(rece)
         db.session.commit()
 
+        app.logger.debug('Se registro una receta con el nombre: {}'.format(rece.nombre))
         flash('La receta se registro correctamente')
         return redirect(url_for('auth.registroRecetario_admin'))
 
@@ -543,7 +547,7 @@ def compraM_2():
     detalle_materia = DetalleCompraMateria.query.all()
     empleado = Empleado.query.all()
     if request.method == 'POST':
-
+        app = Flask(__name__)
         # Realizar el insert en la bd
         materiaPrima = MateriaPrima(
             nombre = create_form2.nombre.data,
@@ -553,7 +557,7 @@ def compraM_2():
         )
         db.session.add(materiaPrima)
         db.session.commit()
-
+        app.logger.debug('Se registro una compra de materia prima con el nombre: {}'.format(materiaPrima.nombre))
         flash('la Materia se agrego correctamente')
         #return redirect(url_for('auth.insertarMateria'))
        # return redirect(url_for('emple.administracion'))
@@ -575,7 +579,7 @@ def compraM():
     print(proveedor)
     print(empleado)
     if request.method == 'POST':
-        
+        app = Flask(__name__)
         # Realizar el insert en la bd
         compra = CompraMateriaPrima(
             fecha_Compra=create_form.fecha_compra.data,
@@ -598,7 +602,7 @@ def compraM():
         db.session.add(detalle)
         print(ultimo_id)
         db.session.commit()
-
+        app.logger.debug('Se registro un detalle decompra de materia prima con el nombre: {}'.format(detalle.cantidad))
         flash('la Materia se agrego correctamente')
        # return redirect(url_for('emple.administracion'))
     return render_template('insertarMateria.html', form2=create_form2, form=create_form, empleado=empleado, 
