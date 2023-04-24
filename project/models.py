@@ -51,7 +51,8 @@ class Product(db.Model, UserMixin):
     Descripcion = db.Column(db.String(255), nullable=False)
     Numero_Existencias = db.Column(db.Integer, nullable=False)
     Image_url = db.Column(db.Text(255), nullable=False)
-    id_materiaPrima =  db.Column(db.Integer,db.ForeignKey('materia_prima.id'))
+    cantidad = db.Column(db.String(50))
+    id_materiaPrima =  db.Column(db.Integer,db.ForeignKey('materia_prima.id'),)
     
 class Empleado(db.Model, UserMixin):
     """Employe account model"""

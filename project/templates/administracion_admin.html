@@ -65,11 +65,14 @@
                                             {{render_field(form.Image_url,class='form-control', style="font-size: 0.9em;", placeholder='Ingresa la url')}}
                                         </div>
                                     </div>
+                                    <div class="form-group col-xs-12 float-label-form-group controls">
+                                        {{render_field(form.cantidad,class='form-control')}}
+                                    </div>
                                     <div class="col-md-12">
                                         <font face="Cavolini" size="2">Materia Prima</font> 
-                                        <select class="col-md-12" name="id_materiaPrima" id="id_materiaPrima">
-                                            {% for mp in materiaPrima %}
-                                                <option value={{mp.id}}> {{mp.id}}</option>
+                                        <select class="col-md-12" name="idMateriaP" id="idMateriaP">
+                                            {% for mp in materiaP %}
+                                                <option value={{mp.id}}> {{mp.nombre}}</option>
                                             {%endfor%}
                                         </select>
                                     </div>

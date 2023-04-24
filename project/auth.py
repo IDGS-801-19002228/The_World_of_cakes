@@ -311,6 +311,9 @@ def modificar_empleado_admin():
 @roles_required("admin")
 def administracion_admin():
     create_form = forms.ProductForm(request.form)
+    productos = Product.query.all()
+    materiaP = MateriaPrima.query.all()
+    print(materiaP)
     if request.method == 'POST':
         app = Flask(__name__)
         prod = Product(Nombre=create_form.Nombre.data,
@@ -320,7 +323,9 @@ def administracion_admin():
                        Descripcion=create_form.Descripcion.data,
                        Numero_Existencias=create_form.Numero_Existencias.data,
                        Image_url=create_form.Image_url.data,
-                       id_materiaPrima = request.form['id'])
+                       cantidad=create_form.cantidad.data,
+                       id_materiaPrima=request.form['idMateriaP']
+                    )
 
         db.session.add(prod)
         db.session.commit()
@@ -332,10 +337,8 @@ def administracion_admin():
         app.logger.debug('Se registro un producto con el nombre: {}'.format(prod.Nombre))
         flash('El producto se registro correctamente')
         return redirect(url_for('auth.administracion_admin'))
-    productos = Product.query.all()
-    materiaPrima = MateriaPrima.query.all()
 
-    return render_template("administracion_admin.html", form=create_form, productos=productos, materiaPrima=materiaPrima)
+    return render_template("administracion_admin.html", form=create_form, productos=productos, materiaP=materiaP)
 
 
 @auth.route("/modificar_administracion_admin", methods=["GET", "POST"])
