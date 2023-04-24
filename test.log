@@ -3724,3 +3724,112 @@
 2023-04-23 18:47:21,340:INFO:Se inicio la aplicacion
 2023-04-23 18:47:21,354:WARNING: * Debugger is active!
 2023-04-23 18:47:21,362:INFO: * Debugger PIN: 577-661-229
+2023-04-23 19:55:51,646:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 19:55:51,880:INFO: * Restarting with stat
+2023-04-23 19:55:57,405:INFO:Se inicio la aplicacion
+2023-04-23 19:55:57,426:WARNING: * Debugger is active!
+2023-04-23 19:55:57,437:INFO: * Debugger PIN: 577-661-229
+2023-04-23 19:56:15,823:INFO:127.0.0.1 - - [23/Apr/2023 19:56:15] "[33mGET /security/merma_admina HTTP/1.1[0m" 404 -
+2023-04-23 19:59:29,896:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 19:59:30,219:INFO: * Restarting with stat
+2023-04-23 19:59:41,126:INFO: * Restarting with stat
+2023-04-23 19:59:45,674:INFO:Se inicio la aplicacion
+2023-04-23 19:59:45,713:WARNING: * Debugger is active!
+2023-04-23 19:59:45,738:INFO: * Debugger PIN: 577-661-229
+2023-04-23 19:59:55,550:INFO:127.0.0.1 - - [23/Apr/2023 19:59:55] "[33mGET /security/merma_admina HTTP/1.1[0m" 404 -
+2023-04-23 19:59:58,991:INFO:127.0.0.1 - - [23/Apr/2023 19:59:58] "GET /security/merma_admin HTTP/1.1" 200 -
+2023-04-23 19:59:59,073:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 19:59:59,082:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,095:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,119:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 19:59:59,137:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 19:59:59,159:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,167:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 19:59:59,168:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,189:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,260:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,268:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 19:59:59,278:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,303:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 19:59:59,305:INFO:127.0.0.1 - - [23/Apr/2023 19:59:59] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,658:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "GET /security/merma_admin HTTP/1.1" 200 -
+2023-04-23 20:00:53,719:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,777:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,792:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,807:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,819:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,826:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,828:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,838:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,846:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,894:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,902:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 20:00:53,903:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,922:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 20:00:53,937:INFO:127.0.0.1 - - [23/Apr/2023 20:00:53] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 20:00:56,058:INFO:127.0.0.1 - - [23/Apr/2023 20:00:56] "[33mGET /security/merma_admi HTTP/1.1[0m" 404 -
+2023-04-23 20:01:03,908:INFO:127.0.0.1 - - [23/Apr/2023 20:01:03] "[33mGET /security/eliminar?id=1 HTTP/1.1[0m" 404 -
+2023-04-23 20:04:45,039:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 20:04:45,423:INFO: * Restarting with stat
+2023-04-23 20:04:50,156:INFO:Se inicio la aplicacion
+2023-04-23 20:04:50,191:WARNING: * Debugger is active!
+2023-04-23 20:04:50,204:INFO: * Debugger PIN: 577-661-229
+2023-04-23 20:04:51,842:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "GET /security/merma_admin HTTP/1.1" 200 -
+2023-04-23 20:04:51,923:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[36mGET /static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-04-23 20:04:51,924:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[33mGET /static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:51,934:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[33mGET /static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:51,958:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[36mGET /static/css/nav.css HTTP/1.1[0m" 304 -
+2023-04-23 20:04:51,974:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[36mGET /static/css/carrusel.css HTTP/1.1[0m" 304 -
+2023-04-23 20:04:51,979:INFO:127.0.0.1 - - [23/Apr/2023 20:04:51] "[36mGET /static/js/carrusel.js HTTP/1.1[0m" 304 -
+2023-04-23 20:04:52,001:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:52,009:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 20:04:52,022:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:52,071:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/sweetalert2/sweetalert2.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:52,074:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[36mGET /static/img/ej4.png HTTP/1.1[0m" 304 -
+2023-04-23 20:04:52,083:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/sweetalert2/sweetalert2.min.js HTTP/1.1[0m" 404 -
+2023-04-23 20:04:52,090:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[36mGET /static/img/fondo5.jpg HTTP/1.1[0m" 304 -
+2023-04-23 20:04:52,123:INFO:127.0.0.1 - - [23/Apr/2023 20:04:52] "[33mGET /security/static/estilos.css HTTP/1.1[0m" 404 -
+2023-04-23 20:04:54,283:INFO:127.0.0.1 - - [23/Apr/2023 20:04:54] "[33mGET /security/merma_admin/ HTTP/1.1[0m" 404 -
+2023-04-23 20:05:25,936:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 20:05:26,270:INFO: * Restarting with stat
+2023-04-23 20:05:50,124:INFO: * Restarting with stat
+2023-04-23 20:05:54,552:INFO:Se inicio la aplicacion
+2023-04-23 20:05:54,564:WARNING: * Debugger is active!
+2023-04-23 20:05:54,572:INFO: * Debugger PIN: 577-661-229
+2023-04-23 20:06:06,688:INFO:127.0.0.1 - - [23/Apr/2023 20:06:06] "[33mGET /security/merma_admin/ HTTP/1.1[0m" 404 -
+2023-04-23 20:07:23,148:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading
+2023-04-23 20:07:23,398:INFO: * Restarting with stat
+2023-04-23 20:07:28,535:INFO:Se inicio la aplicacion
+2023-04-23 20:07:28,586:WARNING: * Debugger is active!
+2023-04-23 20:07:28,600:INFO: * Debugger PIN: 577-661-229
+2023-04-23 20:07:31,099:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\main.py', reloading
+2023-04-23 20:07:31,487:INFO: * Restarting with stat
+2023-04-23 20:07:34,978:INFO:Se inicio la aplicacion
+2023-04-23 20:07:34,994:WARNING: * Debugger is active!
+2023-04-23 20:07:35,002:INFO: * Debugger PIN: 577-661-229
+2023-04-23 20:07:37,610:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/merma_admin/ HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,686:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,690:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,701:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,706:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/css/nav.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,711:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/css/carrusel.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,717:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/js/carrusel.js HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,754:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/mision2.jpg HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,760:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/vision.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,769:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/ej4.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,835:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/ej4.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,839:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/mision2.jpg HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,864:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/fondo5.jpg HTTP/1.1[0m" 404 -
+2023-04-23 20:07:37,869:INFO:127.0.0.1 - - [23/Apr/2023 20:07:37] "[33mGET /security/static/img/vision.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,306:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/merma_admin/a HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,410:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/bootstrap-5.1.3-dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,456:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/bootstrap-5.1.3-dist/css/bootstrap-responsive.min.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,464:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/bootstrap-5.1.3-dist/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,468:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/css/nav.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,488:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/css/carrusel.css HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,519:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/js/carrusel.js HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,535:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/img/vision.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,546:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/img/ej4.png HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,556:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/img/mision2.jpg HTTP/1.1[0m" 404 -
+2023-04-23 20:07:47,586:INFO:127.0.0.1 - - [23/Apr/2023 20:07:47] "[33mGET /security/static/img/fondo5.jpg HTTP/1.1[0m" 404 -
+2023-04-23 20:08:09,795:INFO: * Detected change in 'C:\\curso_python\\Proyecto Final\\The_World_of_cakes\\project\\auth.py', reloading

@@ -32,6 +32,11 @@ import threading
 
 auth = Blueprint("auth", __name__, url_prefix="/security")
 
+errors_bp = Blueprint('errors', __name__)
+@errors_bp.app_errorhandler(404)
+def handle_404_error(error):
+    return render_template('404.html'), 404
+auth.register_blueprint(errors_bp)
 
 @auth.route("/login")
 def login():
