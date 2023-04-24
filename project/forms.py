@@ -110,7 +110,7 @@ class MermaForm (Form):
     precio_venta = FloatField('Precio venta / Precio compra:',[
         validators.DataRequired(message='El campo es requerido')
     ])
-    id_empleado = FloatField('id empleado:')
+    id_Empleado = SelectField('Empleado')
     
 class RecetarioForm(Form):
     id_recetario = IntegerField('id_recetario')
@@ -170,7 +170,7 @@ class CompraForm (Form):
         validators.DataRequired(message='El campo es requerido')
     ])
     id_Proveedor = SelectField('Proveedor') 
-    id_Empleado = SelectField('Empleado')  
+    id_Empleado = SelectField('Empleado')
     cantidad = IntegerField('Cantidad:',[
         validators.DataRequired(message='El campo es requerido')
     ])

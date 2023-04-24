@@ -42,7 +42,12 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            {{render_field(form.id_empleado,class='form-control',placeholder='Ingresa id empleado')}}
+                                            <font face="Cavolini" size="2">Empleado</font> 
+                                            <select class="col-md-12" name="id" id="id">
+                                                {% for emple in empleado %}
+                                                    <option value={{emple.id}}> {{emple.name}}</option>
+                                                {% endfor %}
+                                            </select>     
                                         </div>
 
                                     <input type="submit" id="reg-alum" class="btn btn-primary" name="registra" value="Registrar"/>

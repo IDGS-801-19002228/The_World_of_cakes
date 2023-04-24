@@ -455,13 +455,14 @@ def insertarMerma():
     create_form = forms.MermaForm(request.form)
 
     empleado = Empleado.query.all()
+    
     if request.method == 'POST':
 
         merma = Merma(
             nombre_producto=create_form.nombre_producto.data,
             cantidad_unidad=create_form.cantidad_unidad.data,
             precio_venta=create_form.precio_venta.data,
-            id_empleado=request.form['id_empleado']
+            id_empleado=request.form['id']
         )
        # Realizar el insert en la bd
         db.session.add(merma)
@@ -471,7 +472,7 @@ def insertarMerma():
         # return redirect(url_for('auth.merma_admin'))
 
     mermas = Merma.query.all()
-    return render_template('merma_admin.html', form=create_form, mermas=mermas)
+    return render_template('merma_admin.html', form=create_form, mermas=mermas,empleado=empleado)
 
 
 # --------------------------------------------------------------------------------
@@ -482,6 +483,7 @@ def insertarMerma():
 @roles_required("admin")
 def registroRecetario_admin():
     create_form = forms.RecetarioForm(request.form)
+    proveedor = Proveedor.query.all()
     if request.method == 'POST':
         rece = Recetario(nombre=create_form.nombre.data,
                          descripcion=create_form.descripcion.data,
