@@ -1,3 +1,4 @@
+import datetime
 from itertools import product
 import random
 from flask import Blueprint, Flask, render_template, redirect, url_for, request, flash
@@ -16,7 +17,7 @@ from flask_security.utils import (
 )
 
 
-from .models import CompraMateriaPrima, DetalleCompraMateria, MateriaPrima, Merma, Product, Recetario, Role, User
+from .models import CompraMateriaPrima, DetalleCompraMateria, MateriaPrima, Merma, Pedidos, Product, Recetario, Role, User
 
 from . import db, userDataStore
 
@@ -158,6 +159,23 @@ def productos():
     productos = Product.query.all()
     return render_template("productos.html", productos=productos)
 
+@auth.route("/atender", methods=["GET","POST"])
+def atender():
+    productos = Product.query.all()
+    create_form = forms.ProductForm(request.form)
+    fecha = datetime.now()
+    if request.method == 'POST':
+        pedidos = Pedidos(id_cliente=1,
+                       id_producto=request.form['idP'],
+                       fecha=fecha,
+                       total = request.form['precio'], 
+                       estatus = 1
+                       )
+        
+        db.session.add(pedidos)
+        db.session.commit()
+
+    return render_template("atender.html", productos=productos)
 # Seccion Administrador
 # --------------------------------------------------------------------------
 
@@ -300,16 +318,23 @@ def administracion_admin():
                        Peso=create_form.Peso.data,
                        Descripcion=create_form.Descripcion.data,
                        Numero_Existencias=create_form.Numero_Existencias.data,
-                       Image_url=create_form.Image_url.data)
+                       Image_url=create_form.Image_url.data,
+                       id_materiaPrima = request.form['id'])
 
         db.session.add(prod)
         db.session.commit()
 
+        #materiaPrima = MateriaPrima(
+        #    nombre = request.form['nombre'],
+        #    cantidad = request.form['cantidad']
+        #)
+        
         flash('El producto se registro correctamente')
         return redirect(url_for('auth.administracion_admin'))
     productos = Product.query.all()
+    materiaPrima = MateriaPrima.query.all()
 
-    return render_template("administracion_admin.html", form=create_form, productos=productos)
+    return render_template("administracion_admin.html", form=create_form, productos=productos, materiaPrima=materiaPrima)
 
 
 @auth.route("/modificar_administracion_admin", methods=["GET", "POST"])

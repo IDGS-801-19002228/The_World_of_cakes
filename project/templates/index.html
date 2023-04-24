@@ -101,7 +101,7 @@
                 {% if current_user.is_authenticated %}
                   {% if current_user.has_role('repartidor') %}
                     <li>
-                      <a href="{{ url_for('auth.pedidos') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
+                      <a href="{{ url_for('auth.atender') }}" class="nav-link py-3 px-0 px-lg-3 rounded mx-0 mx-lg-1" style="color:white">Pedidos</a>
                     </li>
                   {% endif %}
                 {% endif %}

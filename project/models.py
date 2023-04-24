@@ -51,6 +51,7 @@ class Product(db.Model, UserMixin):
     Descripcion = db.Column(db.String(255), nullable=False)
     Numero_Existencias = db.Column(db.Integer, nullable=False)
     Image_url = db.Column(db.Text(255), nullable=False)
+    id_materiaPrima =  db.Column(db.Integer,db.ForeignKey('materia_prima.id'))
     
 class Empleado(db.Model, UserMixin):
     """Employe account model"""
@@ -133,3 +134,15 @@ class MateriaPrima (db.Model, UserMixin):
     marca = db.Column(db.String(100))
     cantidad = db.Column(db.Integer)
     unidad_medida = db.Column(db.String(10))
+    
+class Pedidos (db.Model,UserMixin):
+    _tablename_ = 'pedidos' #mapear la tabla 
+    
+    #especificar el tipo de dato atributos de tal tabla
+    id = db.Column(db.Integer,primary_key = True)  
+    fecha = db.Column(db.DateTime, default = datetime.datetime.now) #crear un campo para registar la fecha y la hora actual 
+    id_cliente =  db.Column(db.Integer,db.ForeignKey('user.id'))
+    id_producto =  db.Column(db.Integer,db.ForeignKey('product.id'))
+    total = db.Column(db.Integer)
+    estatus= db.Column(db.Integer)
+    

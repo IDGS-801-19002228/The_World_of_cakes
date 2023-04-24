@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+{% block content %}
+    
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+           
+            <div class="card-body">
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="" style="background-color: #D97B29">
+                                <tr class="tr-head" >
+                                    <th>Numero pedido</th>
+                                    <th>Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {%for ped in pedidos%}
+                                <tr>
+                                    <form action="/security/atender?id={{ped.id}}" method="POST">
+                                    <input type="text" hidden name="idP" value={{ped.id}}>
+                                    <input type="text" hidden name="fecha" value={{ped.fecha}}>
+                                    <input type="text" hidden name="idC" value={{ped.id_cliente}}>
+                                    <input type="text" hidden name="total" value={{ped.total}}>
+                                    <input type="text" hidden name="estatus" value={{ped.estatus}}>
+                                    <td>{{ped.id}}</td>
+                                    <td>{{ped.fecha}}</td>
+                                   <td><input type="submit"  id="reg-alum" class="btn btn-primary" name="registra" value="Atender"/></td>
+                                </tr>
+                            </form>
+                                {%endfor%}
+                            </tbody>
+                        </table>
+
+                        
+                    </div>
+                </div>        
+            </div>
+
+        </div>
+    </div>
+</section>    
+    
+{% endblock %}

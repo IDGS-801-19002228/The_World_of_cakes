@@ -36,6 +36,7 @@ class ProductForm(Form):
     Image_url = TextAreaField('URL:',[
         validators.DataRequired(message='El campo es requerido')
     ])
+    id_materiaPrima = SelectField('MateriaPrima')
     
 class EmpleadoForm(Form):
     id_empleado = IntegerField('id_empleado')
